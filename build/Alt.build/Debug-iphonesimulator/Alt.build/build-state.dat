@@ -1,7 +1,7 @@
 TAlt
 v7
 r0
-t351810582.659915
+t351819269.004297
 cCheck dependencies
 cProcessInfoPlistFile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Info.plist Alt-Info.plist
 cCompileXIB /Users/danchen/Documents/xcode/Alt/MainWindow.xib
@@ -47,9 +47,9 @@ t1297487363
 s7759984
 
 N/Users/danchen/Documents/xcode/Alt/AltViewController.xib
-c000000004F47FC920000000000005E56
-t1330117778
-s24150
+c000000004F4818A60000000000006320
+t1330124966
+s25376
 
 N/Users/danchen/Documents/xcode/Alt/Alt_Prefix.pch
 c000000004F46BCB600000000000000AF
@@ -72,16 +72,16 @@ i"AltAppDelegate.h"
 i"AltViewController.h"
 
 N/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.h
-c000000004F47D3F70000000000000243
-t1330107383
-s579
+c000000004F4817C30000000000000282
+t1330124739
+s642
 i<UIKit/UIKit.h>
 i"ImagePickerController.h"
 
 N/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m
-c000000004F47FC7100000000000009BE
-t1330117745
-s2494
+c000000004F481E83000000000000135C
+t1330126467
+s4956
 i"AltViewController.h"
 
 N/Users/danchen/Documents/xcode/Alt/Classes/ImagePickerController.h
@@ -106,12 +106,12 @@ t1330036800
 s480
 
 N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o
-t1330107467
-s50792
+t1330124979
+s51424
 
 N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o
-t1330117782
-s46000
+t1330126468
+s60520
 
 N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImagePickerController.o
 t1330107467
@@ -122,20 +122,20 @@ t1330035904
 s6304
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app
-t1330117782
+t1330126469
 s272
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM
-t1330117782
+t1330126468
 s102
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt
-t1330117782
-s25492
+t1330126468
+s31132
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/AltViewController.nib
-t1330117782
-s2507
+t1330124979
+s2926
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Info.plist
 t1330035902
@@ -175,11 +175,11 @@ s1238
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies351810582#351810582#0(0"0(0#1#0"8600210656#0"0#
+lSLF07#2@18"Check dependencies351819268#351819268#0(0"0(0#1#0"8624760512#0"0#
 
 CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s351800267.305893
-e351800267.396391
+s351817779.870208
+e351817779.981798
 r1
 xCompileC
 xbuild/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o
@@ -188,11 +188,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m351800267#351800267#0(0"0(0#0#59"/Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m8613419456#1880"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o0#
+lSLF07#2@67"Compile /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m351817779#351817779#0(0"0(0#0#59"/Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m8623966400#1880"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o0#
 
 CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s351810582.520528
-e351810582.606743
+s351819268.857856
+e351819268.951615
 r1
 xCompileC
 xbuild/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o
@@ -201,7 +201,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m351810582#351810582#0(0"0(0#0#62"/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m8615054336#1886"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o0#
+lSLF07#2@70"Compile /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m351819268#351819268#0(0"0(0#0#62"/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m8621068992#1886"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o0#
 
 CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImagePickerController.o /Users/danchen/Documents/xcode/Alt/Classes/ImagePickerController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s351800267.396492
@@ -230,12 +230,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@49"Compile /Users/danchen/Documents/xcode/Alt/main.m351728704#351728704#0(0"0(0#0#41"/Users/danchen/Documents/xcode/Alt/main.m8600028192#1852"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/main.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/main.o0#
 
 CCompileXIB /Users/danchen/Documents/xcode/Alt/AltViewController.xib
-s351810582.098029
-e351810582.520150
+s351817779.339086
+e351817779.869902
 r1
 xCompileXIB
 x/Users/danchen/Documents/xcode/Alt/AltViewController.xib
-lSLF07#2@32"CompileXIB AltViewController.xib351810582#351810582#0(0"0(0#0#56"/Users/danchen/Documents/xcode/Alt/AltViewController.xib8613710208#630"    cd /Users/danchen/Documents/xcode/Alt    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/AltViewController.nib /Users/danchen/Documents/xcode/Alt/AltViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+lSLF07#2@32"CompileXIB AltViewController.xib351817779#351817779#0(0"0(0#0#56"/Users/danchen/Documents/xcode/Alt/AltViewController.xib8606119552#630"    cd /Users/danchen/Documents/xcode/Alt    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/AltViewController.nib /Users/danchen/Documents/xcode/Alt/AltViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
 
 CCompileXIB /Users/danchen/Documents/xcode/Alt/MainWindow.xib
 s351728702.635627
@@ -255,23 +255,23 @@ ximage1.jpg
 lSLF07#2@15"Copy image1.jpg351800266#351800266#0(0"0(0#0#45"/Users/danchen/Documents/xcode/Alt/image1.jpg8613115936#514"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/danchen/Documents/xcode/Alt/image1.jpg /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app0#
 
 CGenerateDSYMFile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt
-s351810582.634450
-e351810582.655892
+s351819268.978548
+e351819269.000456
 r1
 xGenerateDSYMFile
 x/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM
 x/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt
-lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/Alt.app.dSYM build/Debug-iphonesimulator/Alt.app/Alt351810582#351810582#0(0"0(0#0#74"/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt8614167904#421"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt -o /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM0#
+lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/Alt.app.dSYM build/Debug-iphonesimulator/Alt.app/Alt351819268#351819269#0(0"0(0#0#74"/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt8620452160#421"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt -o /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM0#
 
 CLd /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt normal i386
-s351810582.606835
-e351810582.634352
+s351819268.951715
+e351819268.978446
 r1
 xLd
 x/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt
 xnormal
 xi386
-lSLF07#2@79"Link /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt351810582#351810582#0(0"0(0#0#0"8614761216#922"    cd /Users/danchen/Documents/xcode/Alt    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -filelist /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/Alt.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt0#
+lSLF07#2@79"Link /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt351819268#351819268#0(0"0(0#0#0"8620841280#922"    cd /Users/danchen/Documents/xcode/Alt    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -filelist /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/Alt.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt0#
 
 CProcessInfoPlistFile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Info.plist Alt-Info.plist
 s351728702.629048
@@ -296,10 +296,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@25"Precompile Alt_Prefix.pch351728703#351728704#0(0"0(0#0#49"/Users/danchen/Documents/xcode/Alt/Alt_Prefix.pch8604007392#1752"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -c /Users/danchen/Documents/xcode/Alt/Alt_Prefix.pch -o /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch.gch0#
 
 CTouch /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app
-s351810582.656165
-e351810582.659870
+s351819269.000549
+e351819269.004254
 r1
 xTouch
 x/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app
-lSLF07#2@76"Touch /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app351810582#351810582#0(0"0(0#0#0"8613745984#328"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app0#
+lSLF07#2@76"Touch /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app351819269#351819269#0(0"0(0#0#0"8619024864#328"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app0#
 

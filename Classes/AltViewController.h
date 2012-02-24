@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "ImagePickerController.h"
 
-@interface AltViewController : UIViewController <ImagePickerDelegate>{
+@interface AltViewController : UIViewController <UIGestureRecognizerDelegate, ImagePickerDelegate>{
 	IBOutlet UIImageView *imageViewer;
+	IBOutlet UIToolbar *topToolBar;
 	ImagePickerController *_imagePicker;
 	UIPopoverController *_imagePickerPopover;
+
 
 }
 
