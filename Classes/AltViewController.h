@@ -7,19 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ImagePickerController.h"
+#import "NavigationController.h"
+#import "ImageTableController.h"
 
-@interface AltViewController : UIViewController <UIGestureRecognizerDelegate, ImagePickerDelegate>{
+@interface AltViewController : UIViewController <UIGestureRecognizerDelegate, UIPopoverControllerDelegate, 
+												NavigationControllerDelegate, ImageTableDelegate>{
 	IBOutlet UIImageView *imageViewer;
-	IBOutlet UIToolbar *topToolBar;
-	ImagePickerController *_imagePicker;
-	UIPopoverController *_imagePickerPopover;
-
-
+	//IBOutlet UIToolbar *topToolBar;
+	UIPopoverController *_navigationPopoverController;
+	
+	IBOutlet UINavigationBar *topNavBar;
+	IBOutlet UITabBar *bottomTabBar;
+	
+	NSString *_type;
 }
 
-@property (nonatomic, retain) ImagePickerController *imagePicker;
-@property (nonatomic, retain) UIPopoverController *imagePickerPopover;
+@property (nonatomic, retain) UIPopoverController *navigationPopoverController;
 
 - (IBAction)setImageButtonTapped:(id)sender;
 

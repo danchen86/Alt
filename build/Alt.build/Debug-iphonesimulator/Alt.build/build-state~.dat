@@ -1,18 +1,21 @@
 TAlt
 v7
 r0
-t351728704.239528
+t352272616.938548
 cCheck dependencies
 cProcessInfoPlistFile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Info.plist Alt-Info.plist
 cCompileXIB /Users/danchen/Documents/xcode/Alt/MainWindow.xib
 cCompileXIB /Users/danchen/Documents/xcode/Alt/AltViewController.xib
+cCpResource build/Debug-iphonesimulator/Alt.app/abdomen.jpg abdomen.jpg
+cCpResource build/Debug-iphonesimulator/Alt.app/refresh.png refresh.png
+cStripNIB /Users/danchen/Documents/xcode/Alt/ImageNavigation.nib
+cCpResource build/Debug-iphonesimulator/Alt.app/abdomen_slice.jpg abdomen_slice.jpg
 cProcessPCH /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch.gch Alt_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/main.o /Users/danchen/Documents/xcode/Alt/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt normal i386
-cGenerateDSYMFile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt
-cTouch /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app
+cCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/NavigationController.o /Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImageTableController.o /Users/danchen/Documents/xcode/Alt/Classes/ImageTableController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
 c000000004F24355B0000000000000110
@@ -44,10 +47,15 @@ c000000004D5616030000000000766870
 t1297487363
 s7759984
 
+N/Users/danchen/Documents/xcode/Alt/Abdomen Slice.jpg
+c000000004F4EB8C500000000000151A4
+t1330559173
+s86436
+
 N/Users/danchen/Documents/xcode/Alt/AltViewController.xib
-c000000004F46BCB60000000000003ED1
-t1330035894
-s16081
+c000000004F4F080100000000000069E4
+t1330579457
+s27108
 
 N/Users/danchen/Documents/xcode/Alt/Alt_Prefix.pch
 c000000004F46BCB600000000000000AF
@@ -70,66 +78,229 @@ i"AltAppDelegate.h"
 i"AltViewController.h"
 
 N/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.h
-c000000004F46BCB600000000000000DE
-t1330035894
-s222
+c000000004F4F0935000000000000036B
+t1330579765
+s875
 i<UIKit/UIKit.h>
+i"NavigationController.h"
+i"ImageTableController.h"
 
 N/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m
-c000000004F46BCB60000000000000544
-t1330035894
-s1348
+c000000004F4F095C000000000000161D
+t1330579804
+s5661
 i"AltViewController.h"
+
+N/Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.h
+c000000004F4D70CD000000000000012F
+t1330475213
+s303
+i<UIKit/UIKit.h>
+
+N/Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.m
+c000000004F4EA8DD0000000000001179
+t1330555101
+s4473
+i"ImageNavigation.h"
+
+N/Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.xib
+c000000004F4D6B1C0000000000001716
+t1330473756
+s5910
+
+N/Users/danchen/Documents/xcode/Alt/Classes/ImagePickerController.h
+c000000004F46C05600000000000001ED
+t1330036822
+s493
+
+N/Users/danchen/Documents/xcode/Alt/Classes/ImagePickerController.m
+c000000004F4EBA36000000000000152A
+t1330559542
+s5418
+i"ImagePickerController.h"
+
+N/Users/danchen/Documents/xcode/Alt/Classes/ImageTableController.h
+c000000004F4F05C900000000000001E4
+t1330578889
+s484
+i<UIKit/UIKit.h>
+
+N/Users/danchen/Documents/xcode/Alt/Classes/ImageTableController.m
+c000000004F4F06ED0000000000001392
+t1330579181
+s5010
+i"ImageTableController.h"
+
+N/Users/danchen/Documents/xcode/Alt/Classes/ImagesNavigationMenu.xib
+c000000004F4D73A30000000000001116
+t1330475939
+s4374
+
+N/Users/danchen/Documents/xcode/Alt/Classes/NavigationController.h
+c000000004F4F08E70000000000000208
+t1330579687
+s520
+i<UIKit/UIKit.h>
+i"ImageTableController.h"
+
+N/Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m
+c000000004F4F08D0000000000000167C
+t1330579664
+s5756
+i"NavigationController.h"
+
+N/Users/danchen/Documents/xcode/Alt/Classes/untitled.h
+c000000004F4D67CA00000000000000CC
+t1330472906
+s204
+i<UIKit/UIKit.h>
+
+N/Users/danchen/Documents/xcode/Alt/Classes/untitled.m
+c000000004F4D67CA0000000000000586
+t1330472906
+s1414
+i"untitled.h"
+
+N/Users/danchen/Documents/xcode/Alt/Classes/untitled.xib
+c000000004F4D67CA0000000000001853
+t1330472906
+s6227
+
+N/Users/danchen/Documents/xcode/Alt/ImageNavigation.nib
+c000000004F4EBD6C0000000000000088
+t1330560364
+s136
+
+N/Users/danchen/Documents/xcode/Alt/ImageNavigation.xib
+c000000004F4EB2200000000000004977
+t1330557472
+s18807
 
 N/Users/danchen/Documents/xcode/Alt/MainWindow.xib
 c000000004F46BCB60000000000004CE1
 t1330035894
 s19681
 
+N/Users/danchen/Documents/xcode/Alt/abdomen.jpg
+c000000004F304EF20000000000012D46
+t1328566002
+s77126
+
+N/Users/danchen/Documents/xcode/Alt/abdomen_slice
+c000000004F4EB8C500000000000151A4
+t1330559173
+s86436
+
+N/Users/danchen/Documents/xcode/Alt/abdomen_slice.jpg
+c000000004F4EB8C500000000000151A4
+t1330559173
+s86436
+
 N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/Alt.LinkFileList
-c000000004F46BCBE0000000000000161
-t1330035902
-s353
+c000000004F4F0967000000000000025D
+t1330579815
+s605
 
 N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o
-t1330035904
-s50300
+t1330579816
+s51412
 
 N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o
-t1330035904
-s38376
+t2
+s0
+
+N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImageNavigation.o
+t1330555102
+s44260
+
+N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImagePickerController.o
+t1330559628
+s46920
+
+N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImageTableController.o
+t1330579816
+s46112
+
+N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/NavigationController.o
+t1330579816
+s47624
 
 N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/main.o
-t1330035904
+t1330579816
 s6304
 
+N/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/untitled.o
+t2
+s0
+
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app
-t1330035904
-s238
+t2
+s0
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM
-t1330035904
-s102
+t2
+s0
+
+N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Abdomen Slice.jpg
+t2
+s0
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt
-t1330035904
-s16700
+t2
+s0
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/AltViewController.nib
-t1330035903
-s1232
+t1330579815
+s3130
+
+N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/ImageNavigation.nib
+t1330579815
+s2363
+
+N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/ImagesNavigationMenu.nib
+t2
+s0
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Info.plist
-t1330035902
+t1330579815
 s782
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/MainWindow.nib
-t1330035903
+t1330579815
 s1672
 
 N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/PkgInfo
-t1330035902
+t1330579815
 s8
+
+N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/abdomen.jpg
+t1330579815
+s77126
+
+N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/abdomen_slice
+t2
+s0
+
+N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/abdomen_slice.jpg
+t1330579815
+s86436
+
+N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/image1.jpg
+t1330402505
+s77126
+
+N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/refresh.png
+t1330579815
+s1541
+
+N/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/untitled.nib
+t2
+s0
+
+N/Users/danchen/Documents/xcode/Alt/image1.jpg
+c000000004F304EF20000000000012D46
+t1328566002
+s77126
 
 N/Users/danchen/Documents/xcode/Alt/main.m
 c000000004F46BCB60000000000000161
@@ -137,22 +308,27 @@ t1330035894
 s353
 i<UIKit/UIKit.h>
 
+N/Users/danchen/Documents/xcode/Alt/refresh.png
+c000000004F4ACF7F0000000000000605
+t1330302847
+s1541
+
 N/var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch.gch
-t1330035904
+t1330579816
 s15814064
 
 NAlt-Info.plist
-c000000004F46BCB600000000000004D6
-t1330035894
-s1238
+c000000004F4AC42F00000000000004AB
+t1330299951
+s1195
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies351728702#351728702#0(0"0(0#1#0"3343187568374212096#0"0#
+lSLF07#2@18"Check dependencies352272614#352272615#0(0"0(0#1#0"8616288128#0"0#
 
 CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s351728704.067354
-e351728704.162090
+s352272616.696666
+e352272616.795837
 r1
 xCompileC
 xbuild/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o
@@ -161,12 +337,12 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m351728704#351728704#0(0"0(0#0#59"/Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m8601718464#1880"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o0#
+lSLF07#2@67"Compile /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m352272616#352272616#0(0"0(0#0#59"/Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m8620888128#1880"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o0#
 
 CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s351728704.129288
-e351728704.194619
-r1
+s352272616.756150
+e352272616.857981
+r0
 xCompileC
 xbuild/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o
 x/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m
@@ -174,11 +350,352 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@70"Compile /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m351728704#351728704#0(0"0(0#0#62"/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m8604126016#1886"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o0#
+o/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m: In function '-[AltViewController setImageButtonTapped:]':
+o/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:181: error: request for member 'popoverVisible' in something not a structure or union
+o/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:182: warning: 'NavigationController' may not respond to '-dismissPopoverAnimated:'
+o/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:182: warning: (Messages without a matching method signature
+o/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:182: warning: will be assumed to return 'id' and accept
+o/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:182: warning: '...' as arguments.)
+o/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:185: warning: 'NavigationController' may not respond to '-presentPopoverFromBarButtonItem:permittedArrowDirections:animated:'
+o{standard input}:1237:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000009$pb"
+o{standard input}:1237:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression
+o{standard input}:1229:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_35" minus "L00000000009$pb"
+o{standard input}:1229:symbol: "L_OBJC_SELECTOR_REFERENCES_35" can't be undefined in a subtraction expression
+o{standard input}:1223:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_36" minus "L00000000009$pb"
+o{standard input}:1223:symbol: "L_OBJC_SELECTOR_REFERENCES_36" can't be undefined in a subtraction expression
+o{standard input}:1214:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000009$pb"
+o{standard input}:1214:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
+o{standard input}:1208:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000009$pb"
+o{standard input}:1208:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1200:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000009$pb"
+o{standard input}:1200:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+o{standard input}:1194:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000009$pb"
+o{standard input}:1194:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:1185:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_34" minus "L00000000009$pb"
+o{standard input}:1185:symbol: "L_OBJC_SELECTOR_REFERENCES_34" can't be undefined in a subtraction expression
+o{standard input}:1177:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_33" minus "L00000000009$pb"
+o{standard input}:1177:symbol: "L_OBJC_SELECTOR_REFERENCES_33" can't be undefined in a subtraction expression
+o{standard input}:1170:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_32" minus "L00000000009$pb"
+o{standard input}:1170:symbol: "L_OBJC_SELECTOR_REFERENCES_32" can't be undefined in a subtraction expression
+o{standard input}:1166:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_5" minus "L00000000009$pb"
+o{standard input}:1166:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_5" can't be undefined in a subtraction expression
+o{standard input}:1156:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_31" minus "L00000000009$pb"
+o{standard input}:1156:symbol: "L_OBJC_SELECTOR_REFERENCES_31" can't be undefined in a subtraction expression
+o{standard input}:1146:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_34" minus "L00000000009$pb"
+o{standard input}:1146:symbol: "L_OBJC_SELECTOR_REFERENCES_34" can't be undefined in a subtraction expression
+o{standard input}:1138:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_33" minus "L00000000009$pb"
+o{standard input}:1138:symbol: "L_OBJC_SELECTOR_REFERENCES_33" can't be undefined in a subtraction expression
+o{standard input}:1131:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_32" minus "L00000000009$pb"
+o{standard input}:1131:symbol: "L_OBJC_SELECTOR_REFERENCES_32" can't be undefined in a subtraction expression
+o{standard input}:1127:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_5" minus "L00000000009$pb"
+o{standard input}:1127:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_5" can't be undefined in a subtraction expression
+o{standard input}:1117:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_31" minus "L00000000009$pb"
+o{standard input}:1117:symbol: "L_OBJC_SELECTOR_REFERENCES_31" can't be undefined in a subtraction expression
+o{standard input}:1032:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_30" minus "L00000000008$pb"
+o{standard input}:1032:symbol: "L_OBJC_SELECTOR_REFERENCES_30" can't be undefined in a subtraction expression
+o{standard input}:1028:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_SUP_REFS_$_0" minus "L00000000008$pb"
+o{standard input}:1028:symbol: "L_OBJC_CLASSLIST_SUP_REFS_$_0" can't be undefined in a subtraction expression
+o{standard input}:963:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000007$pb"
+o{standard input}:963:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression
+o{standard input}:950:non-relocatable subtraction expression, "L_CGPointZero$non_lazy_ptr" minus "L00000000007$pb"
+o{standard input}:950:symbol: "L_CGPointZero$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:947:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_28" minus "L00000000007$pb"
+o{standard input}:947:symbol: "L_OBJC_SELECTOR_REFERENCES_28" can't be undefined in a subtraction expression
+o{standard input}:941:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_24" minus "L00000000007$pb"
+o{standard input}:941:symbol: "L_OBJC_SELECTOR_REFERENCES_24" can't be undefined in a subtraction expression
+o{standard input}:935:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000007$pb"
+o{standard input}:935:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:925:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_27" minus "L00000000007$pb"
+o{standard input}:925:symbol: "L_OBJC_SELECTOR_REFERENCES_27" can't be undefined in a subtraction expression
+o{standard input}:909:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000007$pb"
+o{standard input}:909:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression
+o{standard input}:903:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000007$pb"
+o{standard input}:903:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:890:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000007$pb"
+o{standard input}:890:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression
+o{standard input}:884:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000007$pb"
+o{standard input}:884:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:877:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000007$pb"
+o{standard input}:877:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:867:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_25" minus "L00000000007$pb"
+o{standard input}:867:symbol: "L_OBJC_SELECTOR_REFERENCES_25" can't be undefined in a subtraction expression
+o{standard input}:861:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_24" minus "L00000000007$pb"
+o{standard input}:861:symbol: "L_OBJC_SELECTOR_REFERENCES_24" can't be undefined in a subtraction expression
+o{standard input}:855:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000007$pb"
+o{standard input}:855:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:843:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000007$pb"
+o{standard input}:843:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
+o{standard input}:835:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000007$pb"
+o{standard input}:835:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
+o{standard input}:827:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000007$pb"
+o{standard input}:827:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression
+o{standard input}:821:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000007$pb"
+o{standard input}:821:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:815:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_29" minus "L00000000007$pb"
+o{standard input}:815:symbol: "L_OBJC_SELECTOR_REFERENCES_29" can't be undefined in a subtraction expression
+o{standard input}:808:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000007$pb"
+o{standard input}:808:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:777:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000006$pb"
+o{standard input}:777:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression
+o{standard input}:768:non-relocatable subtraction expression, "LC3" minus "L00000000006$pb"
+o{standard input}:768:symbol: "LC3" can't be undefined in a subtraction expression
+o{standard input}:766:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_23" minus "L00000000006$pb"
+o{standard input}:766:symbol: "L_OBJC_SELECTOR_REFERENCES_23" can't be undefined in a subtraction expression
+o{standard input}:747:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_19" minus "L00000000006$pb"
+o{standard input}:747:symbol: "L_OBJC_SELECTOR_REFERENCES_19" can't be undefined in a subtraction expression
+o{standard input}:741:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000006$pb"
+o{standard input}:741:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:715:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000006$pb"
+o{standard input}:715:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
+o{standard input}:709:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000006$pb"
+o{standard input}:709:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:699:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_22" minus "L00000000006$pb"
+o{standard input}:699:symbol: "L_OBJC_SELECTOR_REFERENCES_22" can't be undefined in a subtraction expression
+o{standard input}:689:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000006$pb"
+o{standard input}:689:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
+o{standard input}:681:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000006$pb"
+o{standard input}:681:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
+o{standard input}:649:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000005$pb"
+o{standard input}:649:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression
+o{standard input}:640:non-relocatable subtraction expression, "LC4" minus "L00000000005$pb"
+o{standard input}:640:symbol: "LC4" can't be undefined in a subtraction expression
+o{standard input}:638:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_20" minus "L00000000005$pb"
+o{standard input}:638:symbol: "L_OBJC_SELECTOR_REFERENCES_20" can't be undefined in a subtraction expression
+o{standard input}:619:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_19" minus "L00000000005$pb"
+o{standard input}:619:symbol: "L_OBJC_SELECTOR_REFERENCES_19" can't be undefined in a subtraction expression
+o{standard input}:613:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000005$pb"
+o{standard input}:613:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:586:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000005$pb"
+o{standard input}:586:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
+o{standard input}:580:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000005$pb"
+o{standard input}:580:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:570:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000005$pb"
+o{standard input}:570:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression
+o{standard input}:560:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000005$pb"
+o{standard input}:560:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression
+o{standard input}:550:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000005$pb"
+o{standard input}:550:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
+o{standard input}:542:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000005$pb"
+o{standard input}:542:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
+o{standard input}:509:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000004$pb"
+o{standard input}:509:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression
+o{standard input}:503:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.bottomTabBar$non_lazy_ptr" minus "L00000000004$pb"
+o{standard input}:503:symbol: "L_OBJC_IVAR_$_AltViewController.bottomTabBar$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:496:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000004$pb"
+o{standard input}:496:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:488:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000004$pb"
+o{standard input}:488:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression
+o{standard input}:482:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.topNavBar$non_lazy_ptr" minus "L00000000004$pb"
+o{standard input}:482:symbol: "L_OBJC_IVAR_$_AltViewController.topNavBar$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:475:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000004$pb"
+o{standard input}:475:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:444:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000003$pb"
+o{standard input}:444:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:436:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000003$pb"
+o{standard input}:436:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression
+o{standard input}:429:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:429:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:421:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000003$pb"
+o{standard input}:421:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression
+o{standard input}:410:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000003$pb"
+o{standard input}:410:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression
+o{standard input}:407:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_14" minus "L00000000003$pb"
+o{standard input}:407:symbol: "L_OBJC_SELECTOR_REFERENCES_14" can't be undefined in a subtraction expression
+o{standard input}:401:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000003$pb"
+o{standard input}:401:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+o{standard input}:398:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_4" minus "L00000000003$pb"
+o{standard input}:398:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_4" can't be undefined in a subtraction expression
+o{standard input}:392:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000003$pb"
+o{standard input}:392:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:384:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000003$pb"
+o{standard input}:384:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression
+o{standard input}:377:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:377:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:369:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000003$pb"
+o{standard input}:369:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression
+o{standard input}:358:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000003$pb"
+o{standard input}:358:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression
+o{standard input}:355:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000003$pb"
+o{standard input}:355:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression
+o{standard input}:349:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000003$pb"
+o{standard input}:349:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+o{standard input}:346:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_3" minus "L00000000003$pb"
+o{standard input}:346:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_3" can't be undefined in a subtraction expression
+o{standard input}:340:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000003$pb"
+o{standard input}:340:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:332:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000003$pb"
+o{standard input}:332:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression
+o{standard input}:325:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:325:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:317:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000003$pb"
+o{standard input}:317:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression
+o{standard input}:306:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000003$pb"
+o{standard input}:306:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression
+o{standard input}:303:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000003$pb"
+o{standard input}:303:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression
+o{standard input}:297:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000003$pb"
+o{standard input}:297:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+o{standard input}:294:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_2" minus "L00000000003$pb"
+o{standard input}:294:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_2" can't be undefined in a subtraction expression
+o{standard input}:287:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000003$pb"
+o{standard input}:287:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
+o{standard input}:281:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:281:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:271:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000003$pb"
+o{standard input}:271:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:205:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"
+o{standard input}:205:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:197:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"
+o{standard input}:197:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
+o{standard input}:191:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"
+o{standard input}:191:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:184:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"
+o{standard input}:184:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
+o{standard input}:169:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"
+o{standard input}:169:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
+o{standard input}:163:non-relocatable subtraction expression, "LC3" minus "L00000000002$pb"
+o{standard input}:163:symbol: "LC3" can't be undefined in a subtraction expression
+o{standard input}:160:non-relocatable subtraction expression, "LC2" minus "L00000000002$pb"
+o{standard input}:160:symbol: "LC2" can't be undefined in a subtraction expression
+o{standard input}:157:non-relocatable subtraction expression, "LC1" minus "L00000000002$pb"
+o{standard input}:157:symbol: "LC1" can't be undefined in a subtraction expression
+o{standard input}:154:non-relocatable subtraction expression, "LC0" minus "L00000000002$pb"
+o{standard input}:154:symbol: "LC0" can't be undefined in a subtraction expression
+o{standard input}:147:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"
+o{standard input}:147:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:137:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
+o{standard input}:137:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
+o{standard input}:131:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"
+o{standard input}:131:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+o{standard input}:128:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_1" minus "L00000000002$pb"
+o{standard input}:128:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_1" can't be undefined in a subtraction expression
+o{standard input}:123:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"
+o{standard input}:123:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:115:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"
+o{standard input}:115:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+o{standard input}:109:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"
+o{standard input}:109:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:101:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000002$pb"
+o{standard input}:101:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+o{standard input}:95:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"
+o{standard input}:95:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:86:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"
+o{standard input}:86:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression
+o{standard input}:56:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+o{standard input}:56:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+o{standard input}:52:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_SUP_REFS_$_0" minus "L00000000001$pb"
+o{standard input}:52:symbol: "L_OBJC_CLASSLIST_SUP_REFS_$_0" can't be undefined in a subtraction expression
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_SUP_REFS_$_0
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_1
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4
+o{standard input}:unknown:Undefined local symbol LC0
+o{standard input}:unknown:Undefined local symbol LC1
+o{standard input}:unknown:Undefined local symbol LC2
+o{standard input}:unknown:Undefined local symbol LC3
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_2
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_10
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_11
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_12
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_3
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_13
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_4
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_14
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_AltViewController.topNavBar$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_15
+o{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_AltViewController.bottomTabBar$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_16
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_18
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_17
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_19
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_20
+o{standard input}:unknown:Undefined local symbol LC4
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_21
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_22
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_23
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_29
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_24
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_25
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_26
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_27
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_28
+o{standard input}:unknown:Undefined local symbol L_CGPointZero$non_lazy_ptr
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_30
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_31
+o{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_5
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_32
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_33
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_34
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_36
+o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_35
+lSLF07#2@70"Compile /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m352272616#352272616#0(31359"/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m: In function '-[AltViewController setImageButtonTapped:]':/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:181: error: request for member 'popoverVisible' in something not a structure or union/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:182: warning: 'NavigationController' may not respond to '-dismissPopoverAnimated:'/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:182: warning: (Messages without a matching method signature/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:182: warning: will be assumed to return 'id' and accept/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:182: warning: '...' as arguments.)/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m:185: warning: 'NavigationController' may not respond to '-presentPopoverFromBarButtonItem:permittedArrowDirections:animated:'{standard input}:1237:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000009$pb"{standard input}:1237:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression{standard input}:1229:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_35" minus "L00000000009$pb"{standard input}:1229:symbol: "L_OBJC_SELECTOR_REFERENCES_35" can't be undefined in a subtraction expression{standard input}:1223:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_36" minus "L00000000009$pb"{standard input}:1223:symbol: "L_OBJC_SELECTOR_REFERENCES_36" can't be undefined in a subtraction expression{standard input}:1214:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000009$pb"{standard input}:1214:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression{standard input}:1208:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000009$pb"{standard input}:1208:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1200:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000009$pb"{standard input}:1200:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:1194:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000009$pb"{standard input}:1194:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:1185:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_34" minus "L00000000009$pb"{standard input}:1185:symbol: "L_OBJC_SELECTOR_REFERENCES_34" can't be undefined in a subtraction expression{standard input}:1177:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_33" minus "L00000000009$pb"{standard input}:1177:symbol: "L_OBJC_SELECTOR_REFERENCES_33" can't be undefined in a subtraction expression{standard input}:1170:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_32" minus "L00000000009$pb"{standard input}:1170:symbol: "L_OBJC_SELECTOR_REFERENCES_32" can't be undefined in a subtraction expression{standard input}:1166:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_5" minus "L00000000009$pb"{standard input}:1166:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_5" can't be undefined in a subtraction expression{standard input}:1156:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_31" minus "L00000000009$pb"{standard input}:1156:symbol: "L_OBJC_SELECTOR_REFERENCES_31" can't be undefined in a subtraction expression{standard input}:1146:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_34" minus "L00000000009$pb"{standard input}:1146:symbol: "L_OBJC_SELECTOR_REFERENCES_34" can't be undefined in a subtraction expression{standard input}:1138:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_33" minus "L00000000009$pb"{standard input}:1138:symbol: "L_OBJC_SELECTOR_REFERENCES_33" can't be undefined in a subtraction expression{standard input}:1131:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_32" minus "L00000000009$pb"{standard input}:1131:symbol: "L_OBJC_SELECTOR_REFERENCES_32" can't be undefined in a subtraction expression{standard input}:1127:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_5" minus "L00000000009$pb"{standard input}:1127:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_5" can't be undefined in a subtraction expression{standard input}:1117:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_31" minus "L00000000009$pb"{standard input}:1117:symbol: "L_OBJC_SELECTOR_REFERENCES_31" can't be undefined in a subtraction expression{standard input}:1032:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_30" minus "L00000000008$pb"{standard input}:1032:symbol: "L_OBJC_SELECTOR_REFERENCES_30" can't be undefined in a subtraction expression{standard input}:1028:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_SUP_REFS_$_0" minus "L00000000008$pb"{standard input}:1028:symbol: "L_OBJC_CLASSLIST_SUP_REFS_$_0" can't be undefined in a subtraction expression{standard input}:963:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000007$pb"{standard input}:963:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression{standard input}:950:non-relocatable subtraction expression, "L_CGPointZero$non_lazy_ptr" minus "L00000000007$pb"{standard input}:950:symbol: "L_CGPointZero$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:947:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_28" minus "L00000000007$pb"{standard input}:947:symbol: "L_OBJC_SELECTOR_REFERENCES_28" can't be undefined in a subtraction expression{standard input}:941:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_24" minus "L00000000007$pb"{standard input}:941:symbol: "L_OBJC_SELECTOR_REFERENCES_24" can't be undefined in a subtraction expression{standard input}:935:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000007$pb"{standard input}:935:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:925:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_27" minus "L00000000007$pb"{standard input}:925:symbol: "L_OBJC_SELECTOR_REFERENCES_27" can't be undefined in a subtraction expression{standard input}:909:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000007$pb"{standard input}:909:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression{standard input}:903:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000007$pb"{standard input}:903:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:890:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000007$pb"{standard input}:890:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression{standard input}:884:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000007$pb"{standard input}:884:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:877:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000007$pb"{standard input}:877:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:867:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_25" minus "L00000000007$pb"{standard input}:867:symbol: "L_OBJC_SELECTOR_REFERENCES_25" can't be undefined in a subtraction expression{standard input}:861:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_24" minus "L00000000007$pb"{standard input}:861:symbol: "L_OBJC_SELECTOR_REFERENCES_24" can't be undefined in a subtraction expression{standard input}:855:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000007$pb"{standard input}:855:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:843:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000007$pb"{standard input}:843:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:835:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000007$pb"{standard input}:835:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:827:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000007$pb"{standard input}:827:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression{standard input}:821:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000007$pb"{standard input}:821:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:815:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_29" minus "L00000000007$pb"{standard input}:815:symbol: "L_OBJC_SELECTOR_REFERENCES_29" can't be undefined in a subtraction expression{standard input}:808:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000007$pb"{standard input}:808:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:777:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000006$pb"{standard input}:777:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression{standard input}:768:non-relocatable subtraction expression, "LC3" minus "L00000000006$pb"{standard input}:768:symbol: "LC3" can't be undefined in a subtraction expression{standard input}:766:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_23" minus "L00000000006$pb"{standard input}:766:symbol: "L_OBJC_SELECTOR_REFERENCES_23" can't be undefined in a subtraction expression{standard input}:747:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_19" minus "L00000000006$pb"{standard input}:747:symbol: "L_OBJC_SELECTOR_REFERENCES_19" can't be undefined in a subtraction expression{standard input}:741:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000006$pb"{standard input}:741:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:715:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000006$pb"{standard input}:715:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:709:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000006$pb"{standard input}:709:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:699:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_22" minus "L00000000006$pb"{standard input}:699:symbol: "L_OBJC_SELECTOR_REFERENCES_22" can't be undefined in a subtraction expression{standard input}:689:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000006$pb"{standard input}:689:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:681:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000006$pb"{standard input}:681:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:649:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000005$pb"{standard input}:649:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression{standard input}:640:non-relocatable subtraction expression, "LC4" minus "L00000000005$pb"{standard input}:640:symbol: "LC4" can't be undefined in a subtraction expression{standard input}:638:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_20" minus "L00000000005$pb"{standard input}:638:symbol: "L_OBJC_SELECTOR_REFERENCES_20" can't be undefined in a subtraction expression{standard input}:619:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_19" minus "L00000000005$pb"{standard input}:619:symbol: "L_OBJC_SELECTOR_REFERENCES_19" can't be undefined in a subtraction expression{standard input}:613:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000005$pb"{standard input}:613:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:586:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000005$pb"{standard input}:586:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:580:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000005$pb"{standard input}:580:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:570:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000005$pb"{standard input}:570:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression{standard input}:560:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000005$pb"{standard input}:560:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression{standard input}:550:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000005$pb"{standard input}:550:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:542:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000005$pb"{standard input}:542:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:509:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000004$pb"{standard input}:509:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression{standard input}:503:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.bottomTabBar$non_lazy_ptr" minus "L00000000004$pb"{standard input}:503:symbol: "L_OBJC_IVAR_$_AltViewController.bottomTabBar$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:496:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000004$pb"{standard input}:496:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:488:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000004$pb"{standard input}:488:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression{standard input}:482:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.topNavBar$non_lazy_ptr" minus "L00000000004$pb"{standard input}:482:symbol: "L_OBJC_IVAR_$_AltViewController.topNavBar$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:475:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000004$pb"{standard input}:475:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:444:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000003$pb"{standard input}:444:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:436:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000003$pb"{standard input}:436:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression{standard input}:429:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000003$pb"{standard input}:429:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:421:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000003$pb"{standard input}:421:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression{standard input}:410:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000003$pb"{standard input}:410:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression{standard input}:407:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_14" minus "L00000000003$pb"{standard input}:407:symbol: "L_OBJC_SELECTOR_REFERENCES_14" can't be undefined in a subtraction expression{standard input}:401:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000003$pb"{standard input}:401:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:398:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_4" minus "L00000000003$pb"{standard input}:398:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_4" can't be undefined in a subtraction expression{standard input}:392:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000003$pb"{standard input}:392:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:384:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000003$pb"{standard input}:384:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression{standard input}:377:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000003$pb"{standard input}:377:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:369:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000003$pb"{standard input}:369:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression{standard input}:358:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000003$pb"{standard input}:358:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression{standard input}:355:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000003$pb"{standard input}:355:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression{standard input}:349:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000003$pb"{standard input}:349:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:346:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_3" minus "L00000000003$pb"{standard input}:346:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_3" can't be undefined in a subtraction expression{standard input}:340:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000003$pb"{standard input}:340:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:332:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000003$pb"{standard input}:332:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression{standard input}:325:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000003$pb"{standard input}:325:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:317:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000003$pb"{standard input}:317:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression{standard input}:306:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000003$pb"{standard input}:306:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression{standard input}:303:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000003$pb"{standard input}:303:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression{standard input}:297:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000003$pb"{standard input}:297:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:294:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_2" minus "L00000000003$pb"{standard input}:294:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_2" can't be undefined in a subtraction expression{standard input}:287:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000003$pb"{standard input}:287:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression{standard input}:281:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000003$pb"{standard input}:281:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:271:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000003$pb"{standard input}:271:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:205:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"{standard input}:205:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:197:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"{standard input}:197:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:191:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"{standard input}:191:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:184:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"{standard input}:184:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:169:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"{standard input}:169:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:163:non-relocatable subtraction expression, "LC3" minus "L00000000002$pb"{standard input}:163:symbol: "LC3" can't be undefined in a subtraction expression{standard input}:160:non-relocatable subtraction expression, "LC2" minus "L00000000002$pb"{standard input}:160:symbol: "LC2" can't be undefined in a subtraction expression{standard input}:157:non-relocatable subtraction expression, "LC1" minus "L00000000002$pb"{standard input}:157:symbol: "LC1" can't be undefined in a subtraction expression{standard input}:154:non-relocatable subtraction expression, "LC0" minus "L00000000002$pb"{standard input}:154:symbol: "LC0" can't be undefined in a subtraction expression{standard input}:147:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"{standard input}:147:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:137:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:137:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:131:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"{standard input}:131:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:128:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_REFERENCES_$_1" minus "L00000000002$pb"{standard input}:128:symbol: "L_OBJC_CLASSLIST_REFERENCES_$_1" can't be undefined in a subtraction expression{standard input}:123:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"{standard input}:123:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:115:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"{standard input}:115:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:109:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"{standard input}:109:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:101:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000002$pb"{standard input}:101:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:95:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"{standard input}:95:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:86:non-relocatable subtraction expression, "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" minus "L00000000002$pb"{standard input}:86:symbol: "L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr" can't be undefined in a subtraction expression{standard input}:56:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"{standard input}:56:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:52:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_SUP_REFS_$_0" minus "L00000000001$pb"{standard input}:52:symbol: "L_OBJC_CLASSLIST_SUP_REFS_$_0" can't be undefined in a subtraction expression{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_SUP_REFS_$_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_AltViewController.imageViewer$non_lazy_ptr{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4{standard input}:unknown:Undefined local symbol LC0{standard input}:unknown:Undefined local symbol LC1{standard input}:unknown:Undefined local symbol LC2{standard input}:unknown:Undefined local symbol LC3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_10{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_11{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_12{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_13{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_4{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_14{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_AltViewController.topNavBar$non_lazy_ptr{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_15{standard input}:unknown:Undefined local symbol L_OBJC_IVAR_$_AltViewController.bottomTabBar$non_lazy_ptr{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_16{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_18{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_17{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_19{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_20{standard input}:unknown:Undefined local symbol LC4{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_21{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_22{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_23{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_29{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_24{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_25{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_26{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_27{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_28{standard input}:unknown:Undefined local symbol L_CGPointZero$non_lazy_ptr{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_30{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_31{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_REFERENCES_$_5{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_32{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_33{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_34{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_36{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_354(4@73"Request for member 'popoverVisible' in something not a structure or union352272616#122#149#0(6@62"/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m352272604#181#0#181#0#0"0(22@68"'NavigationController' may not respond to '-dismissPopoverAnimated:'352272616#271#146#0(6@62"/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m352272604#182#0#182#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)352272616#417#123#0(6@62"/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m352272604#182#0#182#0#0"0(22@111"'NavigationController' may not respond to '-presentPopoverFromBarButtonItem:permittedArrowDirections:animated:'352272616#757#189#0(6@62"/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m352272604#185#0#185#0#26"'*' may not respond to '*'0(0#0#62"/Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m8656144192#1886"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/AltViewController.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltViewController.o1#
+
+CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImageNavigation.o /Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s352247902.123722
+e352247902.207725
+r1
+xCompileC
+xbuild/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImageNavigation.o
+x/Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.m352247902#352247902#0(0"0(0#0#60"/Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.m8610890368#1882"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImageNavigation.o0#
+
+CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImagePickerController.o /Users/danchen/Documents/xcode/Alt/Classes/ImagePickerController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s352252428.163678
+e352252428.329422
+r1
+xCompileC
+xbuild/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImagePickerController.o
+x/Users/danchen/Documents/xcode/Alt/Classes/ImagePickerController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/danchen/Documents/xcode/Alt/Classes/ImagePickerController.m352252428#352252428#0(0"0(0#0#66"/Users/danchen/Documents/xcode/Alt/Classes/ImagePickerController.m8615808608#1894"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/ImagePickerController.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImagePickerController.o0#
+
+CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImageTableController.o /Users/danchen/Documents/xcode/Alt/Classes/ImageTableController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s352272616.858089
+e352272616.938459
+r1
+xCompileC
+xbuild/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImageTableController.o
+x/Users/danchen/Documents/xcode/Alt/Classes/ImageTableController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/danchen/Documents/xcode/Alt/Classes/ImageTableController.m352272616#352272616#0(0"0(0#0#65"/Users/danchen/Documents/xcode/Alt/Classes/ImageTableController.m8644526624#1892"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/ImageTableController.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/ImageTableController.o0#
+
+CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/NavigationController.o /Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s352272616.795950
+e352272616.902617
+r1
+xCompileC
+xbuild/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/NavigationController.o
+x/Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m: In function '-[NavigationController tableView:didSelectRowAtIndexPath:]':
+o/Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m:173: warning: unused variable 'image'
+lSLF07#2@73"Compile /Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m352272616#352272616#0(245"/Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m: In function '-[NavigationController tableView:didSelectRowAtIndexPath:]':/Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m:173: warning: unused variable 'image'1(22@23"Unused variable 'image'352272616#141#104#0(6@65"/Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m352272464#173#0#173#0#19"unused variable '*'0(0#0#65"/Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m8621989536#1892"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/Classes/NavigationController.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/NavigationController.o0#
 
 CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/main.o /Users/danchen/Documents/xcode/Alt/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s351728704.065472
-e351728704.129082
+s352272616.695114
+e352272616.756036
 r1
 xCompileC
 xbuild/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/main.o
@@ -187,55 +704,117 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@49"Compile /Users/danchen/Documents/xcode/Alt/main.m351728704#351728704#0(0"0(0#0#41"/Users/danchen/Documents/xcode/Alt/main.m8600028192#1852"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/main.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/main.o0#
+lSLF07#2@49"Compile /Users/danchen/Documents/xcode/Alt/main.m352272616#352272616#0(0"0(0#0#41"/Users/danchen/Documents/xcode/Alt/main.m8614017824#1852"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -include /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch -c /Users/danchen/Documents/xcode/Alt/main.m -o /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/main.o0#
+
+CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/untitled.o /Users/danchen/Documents/xcode/Alt/Classes/untitled.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CCompileXIB /Users/danchen/Documents/xcode/Alt/AltViewController.xib
-s351728702.636396
-e351728703.028906
+s352272615.035513
+e352272615.532157
 r1
 xCompileXIB
 x/Users/danchen/Documents/xcode/Alt/AltViewController.xib
-lSLF07#2@32"CompileXIB AltViewController.xib351728702#351728703#0(0"0(0#0#56"/Users/danchen/Documents/xcode/Alt/AltViewController.xib8602288416#630"    cd /Users/danchen/Documents/xcode/Alt    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/AltViewController.nib /Users/danchen/Documents/xcode/Alt/AltViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+lSLF07#2@32"CompileXIB AltViewController.xib352272615#352272615#0(0"0(0#0#56"/Users/danchen/Documents/xcode/Alt/AltViewController.xib8621045184#630"    cd /Users/danchen/Documents/xcode/Alt    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/AltViewController.nib /Users/danchen/Documents/xcode/Alt/AltViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.xib
+s352247814.601692
+e352247815.237221
+r1
+xCompileXIB
+x/Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.xib
+lSLF07#2@38"CompileXIB Classes/ImageNavigation.xib352247814#352247815#0(0"0(0#0#62"/Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.xib8602967264#634"    cd /Users/danchen/Documents/xcode/Alt    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/ImageNavigation.nib /Users/danchen/Documents/xcode/Alt/Classes/ImageNavigation.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/danchen/Documents/xcode/Alt/Classes/ImagesNavigationMenu.xib
+r0
+
+CCompileXIB /Users/danchen/Documents/xcode/Alt/Classes/untitled.xib
+r0
+
+CCompileXIB /Users/danchen/Documents/xcode/Alt/ImageNavigation.xib
+r0
 
 CCompileXIB /Users/danchen/Documents/xcode/Alt/MainWindow.xib
-s351728702.635627
-e351728703.050931
+s352272615.034727
+e352272615.448819
 r1
 xCompileXIB
 x/Users/danchen/Documents/xcode/Alt/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib351728702#351728703#0(0"0(0#0#49"/Users/danchen/Documents/xcode/Alt/MainWindow.xib8602428832#616"    cd /Users/danchen/Documents/xcode/Alt    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/MainWindow.nib /Users/danchen/Documents/xcode/Alt/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+lSLF07#2@25"CompileXIB MainWindow.xib352272615#352272615#0(0"0(0#0#49"/Users/danchen/Documents/xcode/Alt/MainWindow.xib8621506816#616"    cd /Users/danchen/Documents/xcode/Alt    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/MainWindow.nib /Users/danchen/Documents/xcode/Alt/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCpResource "build/Debug-iphonesimulator/Alt.app/Abdomen Slice.jpg" "Abdomen Slice.jpg"
+r0
+
+CCpResource build/Debug-iphonesimulator/Alt.app/abdomen.jpg abdomen.jpg
+s352272615.448923
+e352272615.454499
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Alt.app/abdomen.jpg
+xabdomen.jpg
+lSLF07#2@16"Copy abdomen.jpg352272615#352272615#0(0"0(0#0#46"/Users/danchen/Documents/xcode/Alt/abdomen.jpg8616946656#515"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/danchen/Documents/xcode/Alt/abdomen.jpg /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app0#
+
+CCpResource build/Debug-iphonesimulator/Alt.app/abdomen_slice abdomen_slice
+r0
+
+CCpResource build/Debug-iphonesimulator/Alt.app/abdomen_slice.jpg abdomen_slice.jpg
+s352272615.532253
+e352272615.537933
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Alt.app/abdomen_slice.jpg
+xabdomen_slice.jpg
+lSLF07#2@22"Copy abdomen_slice.jpg352272615#352272615#0(0"0(0#0#52"/Users/danchen/Documents/xcode/Alt/abdomen_slice.jpg8615951104#521"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/danchen/Documents/xcode/Alt/abdomen_slice.jpg /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app0#
+
+CCpResource build/Debug-iphonesimulator/Alt.app/image1.jpg image1.jpg
+s352095305.134644
+e352095305.222435
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Alt.app/image1.jpg
+ximage1.jpg
+lSLF07#2@15"Copy image1.jpg352095305#352095305#0(0"0(0#0#45"/Users/danchen/Documents/xcode/Alt/image1.jpg8614605344#514"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/danchen/Documents/xcode/Alt/image1.jpg /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app0#
+
+CCpResource build/Debug-iphonesimulator/Alt.app/refresh.png refresh.png
+s352272615.449653
+e352272615.454999
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Alt.app/refresh.png
+xrefresh.png
+lSLF07#2@16"Copy refresh.png352272615#352272615#0(0"0(0#0#46"/Users/danchen/Documents/xcode/Alt/refresh.png8616826432#515"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/danchen/Documents/xcode/Alt/refresh.png /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app0#
 
 CGenerateDSYMFile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt
-s351728704.221569
-e351728704.236720
+s352272237.692198
+e352272237.717956
 r1
 xGenerateDSYMFile
 x/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM
 x/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt
-lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/Alt.app.dSYM build/Debug-iphonesimulator/Alt.app/Alt351728704#351728704#0(0"0(0#0#74"/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt8604169216#421"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt -o /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM0#
+lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/Alt.app.dSYM build/Debug-iphonesimulator/Alt.app/Alt352272237#352272237#0(0"0(0#0#74"/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt8619812288#421"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt -o /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app.dSYM0#
 
 CLd /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt normal i386
-s351728704.194706
-e351728704.221461
+s352272237.664166
+e352272237.692100
 r1
 xLd
 x/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt
 xnormal
 xi386
-lSLF07#2@79"Link /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt351728704#351728704#0(0"0(0#0#0"8601159168#922"    cd /Users/danchen/Documents/xcode/Alt    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -filelist /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/Alt.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt0#
+lSLF07#2@79"Link /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt352272237#352272237#0(0"0(0#0#0"8652571008#922"    cd /Users/danchen/Documents/xcode/Alt    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -filelist /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/Alt.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Alt0#
 
 CProcessInfoPlistFile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Info.plist Alt-Info.plist
-s351728702.629048
-e351728702.635536
+s352272615.006910
+e352272615.034620
 r1
 xProcessInfoPlistFile
 x/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Info.plist
 xAlt-Info.plist
-lSLF07#2@22"Process Alt-Info.plist351728702#351728702#0(0"0(0#0#49"/Users/danchen/Documents/xcode/Alt/Alt-Info.plist29555366482477168#517"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility Alt-Info.plist -genpkginfo /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Info.plist0#
+lSLF07#2@22"Process Alt-Info.plist352272615#352272615#0(0"0(0#0#49"/Users/danchen/Documents/xcode/Alt/Alt-Info.plist8617051552#517"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility Alt-Info.plist -genpkginfo /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Info.plist0#
 
 CProcessPCH /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch.gch Alt_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s351728703.051107
-e351728704.065231
+s352272615.574271
+e352272616.694897
 r1
 xProcessPCH
 x/var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch.gch
@@ -244,13 +823,21 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@25"Precompile Alt_Prefix.pch351728703#351728704#0(0"0(0#0#49"/Users/danchen/Documents/xcode/Alt/Alt_Prefix.pch8604007392#1752"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -c /Users/danchen/Documents/xcode/Alt/Alt_Prefix.pch -o /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch.gch0#
+lSLF07#2@25"Precompile Alt_Prefix.pch352272615#352272616#0(0"0(0#0#49"/Users/danchen/Documents/xcode/Alt/Alt_Prefix.pch8615653568#1752"    cd /Users/danchen/Documents/xcode/Alt    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-generated-files.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-own-target-headers.hmap -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-all-target-headers.hmap -iquote /Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/Alt-project-headers.hmap -F/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator -I/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/include -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources/i386 -I/Users/danchen/Documents/xcode/Alt/build/Alt.build/Debug-iphonesimulator/Alt.build/DerivedSources -c /Users/danchen/Documents/xcode/Alt/Alt_Prefix.pch -o /var/folders/SI/SIdqANpIELau7EZNopOAVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Alt_Prefix-cyyfciwutkvdzfayxlmutamaebvz/Alt_Prefix.pch.gch0#
+
+CStripNIB /Users/danchen/Documents/xcode/Alt/ImageNavigation.nib
+s352272615.450376
+e352272615.573990
+r1
+xStripNIB
+x/Users/danchen/Documents/xcode/Alt/ImageNavigation.nib
+lSLF07#2@28"StripNIB ImageNavigation.nib352272615#352272615#0(0"0(0#0#54"/Users/danchen/Documents/xcode/Alt/ImageNavigation.nib8616375808#455"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --strip /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/ImageNavigation.nib --output-format human-readable-text /Users/danchen/Documents/xcode/Alt/ImageNavigation.nib0#
 
 CTouch /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app
-s351728704.236812
-e351728704.239486
+s352272237.718039
+e352272237.720902
 r1
 xTouch
 x/Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app
-lSLF07#2@76"Touch /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app351728704#351728704#0(0"0(0#0#0"8603320416#328"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app0#
+lSLF07#2@76"Touch /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app352272237#352272237#0(0"0(0#0#0"8615756768#328"    cd /Users/danchen/Documents/xcode/Alt    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app0#
 

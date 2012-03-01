@@ -10,8 +10,10 @@
 
 @implementation AltViewController
 
-@synthesize imagePicker = _imagePicker;
-@synthesize imagePickerPopover = _imagePickerPopover;
+//@synthesize imageNavigation = _imageNavigation;
+//@synthesize imagePicker = _imagePicker;
+//@synthesize imagePickerPopover = _imagePickerPopover;
+@synthesize navigationPopoverController = _navigationPopoverController;
 
 
 /*
@@ -28,46 +30,59 @@
 /*
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
-
 }
  */
+ 
 
-
-
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	[super viewDidLoad];	
-}
-*/
- 
-- (void)resetTopToolBar{
-	[self.view bringSubviewToFront:topToolBar];
+	[super viewDidLoad];
 }
 
+- (void)displayImage:(UIImage*) imageToDisplay {
+	if( imageViewer != nil) {
+		[imageViewer setImage:nil];
+		[imageViewer release];
+	}
+	imageViewer = [[UIImageView alloc] initWithImage:imageToDisplay];
+	[imageViewer setFrame:CGRectMake(0, 44, 768, 911)];
+	[self.view addSubview:imageViewer];
+	[imageToDisplay release];
+
+}
+
+
 - (void)addGestureRecognizersToImage{
-	imageViewer.userInteractionEnabled = YES;
-	
-	//Pinch for Scaling
-	UIPinchGestureRecognizer *pinchGR = 
+	if (imageViewer != nil) {
+		imageViewer.userInteractionEnabled = YES;
+		
+		//Pinch for Scaling
+		UIPinchGestureRecognizer *pinchGR = 
 		[[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(scaleImage:)];
-	pinchGR.delegate = self;
-	[imageViewer addGestureRecognizer:pinchGR];
-	[pinchGR release];
-	
-	//Rotation
-	UIRotationGestureRecognizer *rotationGR = 
+		pinchGR.delegate = self;
+		[imageViewer addGestureRecognizer:pinchGR];
+		[pinchGR release];
+		
+		//Rotation
+		UIRotationGestureRecognizer *rotationGR = 
 		[[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(rotateImage:)];
-	rotationGR.delegate = self;
-	[imageViewer addGestureRecognizer:rotationGR];
-	[rotationGR release];
-	
-	//Pan for Moving image when scaled
-	UIPanGestureRecognizer *panGR = 
+		rotationGR.delegate = self;
+		[imageViewer addGestureRecognizer:rotationGR];
+		[rotationGR release];
+		
+		//Pan for Moving image when scaled
+		UIPanGestureRecognizer *panGR = 
 		[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panImage:)];
-	panGR.delegate = self;
-	[imageViewer addGestureRecognizer:panGR];
-	[panGR release];
+		panGR.delegate = self;
+		[imageViewer addGestureRecognizer:panGR];
+		[panGR release];
+		
+	}
+}
+
+- (void)bringToolBarsToFront {
+	[self.view bringSubviewToFront:topNavBar];
+	[self.view bringSubviewToFront:bottomTabBar];
 }
 
 - (void)scaleImage:(UIPinchGestureRecognizer *)gestureRecognizer {
@@ -79,23 +94,26 @@
 			CGAffineTransformScale([[gestureRecognizer view] transform], [gestureRecognizer scale], [gestureRecognizer scale]);
         [gestureRecognizer setScale:1];
     }
+	[self bringToolBarsToFront];
 	
-	[self resetTopToolBar];
 }
 
 - (void)rotateImage:(UIRotationGestureRecognizer *)gestureRecognizer {
+	
 	if ([gestureRecognizer state] == UIGestureRecognizerStateBegan || 
 		[gestureRecognizer state] == UIGestureRecognizerStateChanged) {
         
 		[gestureRecognizer view].transform = 
 			CGAffineTransformRotate([[gestureRecognizer view] transform], [gestureRecognizer rotation]);
-        [gestureRecognizer setRotation:0];
+		
+		[gestureRecognizer setRotation:0];
     }
+	[self bringToolBarsToFront];
 
-	[self resetTopToolBar];
 }
 
 - (void)panImage:(UIPanGestureRecognizer *)gestureRecognizer {
+			[self.view bringSubviewToFront:self.navigationController.view];
     if ([gestureRecognizer state] == UIGestureRecognizerStateBegan || 
 		[gestureRecognizer state] == UIGestureRecognizerStateChanged) {
         
@@ -104,11 +122,85 @@
         [imageViewer setCenter:CGPointMake([imageViewer center].x + translation.x, [imageViewer center].y + translation.y)];
         [gestureRecognizer setTranslation:CGPointZero inView:[imageViewer superview]];
     }
-	
-	[self resetTopToolBar];
+
+	[self bringToolBarsToFront];
+
 }
 
+- (void)createImageMenu:(NSString *)type {
+	_type = type;
+	ImageTableController *imageController = 
+		[[ImageTableController alloc] initWithStyle:UITableViewStylePlain];
+	
+	if ([type compare:@"Abdomen"] == NSOrderedSame) {
+		imageController.images = [NSMutableArray array];
+		[imageController.images addObject:@"Front View"];
+		[imageController.images addObject:@"Slice View"];
+	} else if ([type compare:@"Test"] == NSOrderedSame) {
+		imageController.images = [NSMutableArray array];
+		[imageController.images addObject:@"Test"];
+	}
+	imageController.delegate = self;
+	
+	[(UINavigationController *)(self.navigationPopoverController.contentViewController)
+		pushViewController:imageController animated:YES];
+	
+	[imageController release];
+	[type release];
+}
 
+- (void)imageSelected:(NSString *)image {
+	if([_type compare:@"Abdomen"] == NSOrderedSame) {
+		
+		if ([image compare:@"Front View"] == NSOrderedSame) {
+			[self displayImage:[UIImage imageNamed:@"abdomen.jpg"]];
+			//[imageViewer setImage:[UIImage imageNamed:@"abdomen.jpg"]];
+			
+			[self addGestureRecognizersToImage];
+			
+		} else if ([image compare:@"Slice View"] == NSOrderedSame) {
+			[self displayImage:[UIImage imageNamed:@"abdomen_slice.jpg"]];
+			[self addGestureRecognizersToImage];
+		}
+	} else {
+		[imageViewer setImage:nil];
+		imageViewer.userInteractionEnabled = NO;
+	}
+	
+	[self.navigationPopoverController dismissPopoverAnimated:YES];
+	[self bringToolBarsToFront];
+}
+
+- (IBAction)setImageButtonTapped:(id)sender {
+	if (self.navigationPopoverController == nil) {
+		NavigationController *navMenu = [[NavigationController alloc] initWithStyle:UITableViewStylePlain];
+		navMenu.navigationItem.title = @"Types";
+		navMenu.delegate = self;
+		
+		UINavigationController *navController =
+		[[UINavigationController alloc] initWithRootViewController:navMenu];
+		
+		UIPopoverController *popover = 
+		[[UIPopoverController alloc] initWithContentViewController:navController];
+		
+		//self.imageNavigation.delegate = self;
+        self.navigationPopoverController = popover;
+		self.navigationPopoverController.delegate = self;
+		
+		[navMenu release];
+		[navController release];
+		[popover release];
+		
+    } 
+	
+	if (self.navigationPopoverController.popoverVisible == true) {
+		[self.navigationPopoverController dismissPopoverAnimated:YES];
+	} else {
+		[self.navigationPopoverController presentPopoverFromBarButtonItem:sender 
+												 permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+	}
+	
+}
 
 
 // Override to allow orientations other than the default portrait orientation.
@@ -129,43 +221,11 @@
 }
 
 
-- (void)imageSelected:(NSString *)image {
-    if ([image compare:@"Image1"] == NSOrderedSame) {
-		[imageViewer setImage:[UIImage imageNamed:@"image1.jpg"]];
-		[self addGestureRecognizersToImage];
-		[imageViewer setBackgroundColor:[UIColor blackColor]];
-//    } else if ([image compare:@"Image2"] == NSOrderedSame) {
-//		[imageViewer setImage:nil];
-//    } else if ([image compare:@"Image3"] == NSOrderedSame){
-//		[imageViewer setImage:nil];
-//    }
-	} else {
-		[imageViewer setImage:nil];
-		imageViewer.userInteractionEnabled = NO;
-	}
-
-    [self.imagePickerPopover dismissPopoverAnimated:YES];
-}
-
-- (IBAction)setImageButtonTapped:(id)sender {
-    if (_imagePicker == nil) {
-        self.imagePicker = [[[ImagePickerController alloc] 
-							 initWithStyle:UITableViewStylePlain] autorelease];
-        _imagePicker.delegate = self;
-        self.imagePickerPopover = [[[UIPopoverController alloc] 
-									initWithContentViewController:_imagePicker] autorelease];               
-    }
-    [self.imagePickerPopover presentPopoverFromBarButtonItem:sender 
-									permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-}
-
-
-
 
 - (void)dealloc {
     [super dealloc];
-	self.imagePicker = nil;
-	self.imagePickerPopover = nil;
+	[self.navigationPopoverController release];
+	[imageViewer release];
 }
 
 @end

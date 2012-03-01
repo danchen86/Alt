@@ -1,30 +1,18 @@
 //
-//  ImagePickerController.m
+//  ImageTableController.m
 //  Alt
 //
-//  Created by Dan Chen on 2/23/12.
+//  Created by Dan Chen on 2/29/12.
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ImagePickerController.h"
+#import "ImageTableController.h"
 
 
-@implementation ImagePickerController
+@implementation ImageTableController
 
 @synthesize images = _images;
 @synthesize delegate = _delegate;
-
-// Add viewDidLoad like the following:
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.clearsSelectionOnViewWillAppear = NO;
-    self.contentSizeForViewInPopover = CGSizeMake(150.0, 140.0);
-    self.images = [NSMutableArray array];
-    [_images addObject:@"Image1"];
-    [_images addObject:@"Image2"];
-    [_images addObject:@"Image3"];
-}
-
 
 #pragma mark -
 #pragma mark Initialization
@@ -53,8 +41,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	//self.images = [NSMutableArray array];
 }
-*/
+ */
+
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -80,7 +70,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Override to allow orientations other than the default portrait orientation.
-    return YES;
+    return NO;
 }
 
 
@@ -169,10 +159,8 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
 	 */
-	if (_delegate != nil) {
-		NSString *image = [_images objectAtIndex:indexPath.row];
-		[_delegate imageSelected:image];
-	}
+	NSString *image = [_images objectAtIndex:indexPath.row];
+	[_delegate imageSelected:image];
 }
 
 
@@ -194,8 +182,8 @@
 
 - (void)dealloc {
     [super dealloc];
-	self.images = nil;
-	self.delegate = nil;
+	[self.images release];
+	//[self.delegate release];
 }
 
 
