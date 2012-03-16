@@ -74,8 +74,19 @@
 		UIPanGestureRecognizer *panGR = 
 		[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panImage:)];
 		panGR.delegate = self;
+		panGR.minimumNumberOfTouches = 1;
+		panGR.maximumNumberOfTouches = 1;
 		[imageViewer addGestureRecognizer:panGR];
 		[panGR release];
+		
+		//Scrolling with two fingers
+		UIPanGestureRecognizer *scrollGR = 
+		[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(scrollImage:)];
+		scrollGR.delegate = self;
+		scrollGR.minimumNumberOfTouches = 2;
+		scrollGR.maximumNumberOfTouches = 2;
+		[imageViewer addGestureRecognizer:scrollGR];
+		[scrollGR release];
 		
 	}
 }
@@ -113,7 +124,6 @@
 }
 
 - (void)panImage:(UIPanGestureRecognizer *)gestureRecognizer {
-			[self.view bringSubviewToFront:self.navigationController.view];
     if ([gestureRecognizer state] == UIGestureRecognizerStateBegan || 
 		[gestureRecognizer state] == UIGestureRecognizerStateChanged) {
         
@@ -125,6 +135,10 @@
 
 	[self bringToolBarsToFront];
 
+}
+
+- (void)scrollImage:(UIPanGestureRecognizer *)gestureRecognizer {
+	//scroll images
 }
 
 - (void)createImageMenu:(NSString *)type {

@@ -1,7 +1,7 @@
 TAlt
 v7
 r0
-t352281471.938256
+t352317731.842095
 cCheck dependencies
 cProcessInfoPlistFile /Users/danchen/Documents/xcode/Alt/build/Debug-iphonesimulator/Alt.app/Info.plist Alt-Info.plist
 cCompileXIB /Users/danchen/Documents/xcode/Alt/MainWindow.xib
@@ -326,7 +326,7 @@ s1195
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies352281471#352281471#0(0"0(0#1#0"8608477440#0"0#
+lSLF07#2@18"Check dependencies352317731#352317731#0(0"0(0#1#0"8601691136#0"0#
 
 CCompileC build/Alt.build/Debug-iphonesimulator/Alt.build/Objects-normal/i386/AltAppDelegate.o /Users/danchen/Documents/xcode/Alt/Classes/AltAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s352280580.744685
