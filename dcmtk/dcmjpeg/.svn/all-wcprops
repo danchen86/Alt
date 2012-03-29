@@ -1,0 +1,401 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/osirix/!svn/ver/9171/osirix/Binaries/dcmtk-source/dcmjpeg
+END
+djenclol.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djenclol.h
+END
+djcodecd.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/9171/osirix/Binaries/dcmtk-source/dcmjpeg/djcodecd.cc
+END
+djdecsps.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdecsps.cc
+END
+djrploss.cc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djrploss.cc
+END
+djdijg12.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djdijg12.h
+END
+djcodecd.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djcodecd.h
+END
+djdecsps.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdecsps.h
+END
+djdecsv1.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdecsv1.cc
+END
+djencpro.cc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djencpro.cc
+END
+djencext.cc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djencext.cc
+END
+ddpiimpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/ddpiimpl.h
+END
+djdijg16.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djdijg16.h
+END
+djdecsv1.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdecsv1.h
+END
+djrplol.cc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djrplol.cc
+END
+djencode.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/7768/osirix/Binaries/dcmtk-source/dcmjpeg/djencode.cc
+END
+djencode.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7894/osirix/Binaries/dcmtk-source/dcmjpeg/djencode.h
+END
+djutils.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osirix/!svn/ver/7768/osirix/Binaries/dcmtk-source/dcmjpeg/djutils.h
+END
+djdecext.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdecext.cc
+END
+djdecpro.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdecpro.cc
+END
+djdijp2k.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/9025/osirix/Binaries/dcmtk-source/dcmjpeg/djdijp2k.cc
+END
+djdecabs.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djdecabs.h
+END
+djdecode.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/7768/osirix/Binaries/dcmtk-source/dcmjpeg/djdecode.cc
+END
+djdec2k.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7864/osirix/Binaries/dcmtk-source/dcmjpeg/djdec2k.cc
+END
+djrplol.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djrplol.h
+END
+djencbas.cc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djencbas.cc
+END
+djencsps.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djencsps.h
+END
+djencsv1.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djencsv1.h
+END
+djcparam.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/djcparam.cc
+END
+djenc2k.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osirix/!svn/ver/7769/osirix/Binaries/dcmtk-source/dcmjpeg/djenc2k.h
+END
+djeijg8.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osirix/!svn/ver/7778/osirix/Binaries/dcmtk-source/dcmjpeg/djeijg8.h
+END
+dipijpeg.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/dipijpeg.cc
+END
+djeijg2k.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7778/osirix/Binaries/dcmtk-source/dcmjpeg/djeijg2k.h
+END
+djdecext.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdecext.h
+END
+djdecpro.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdecpro.h
+END
+dipijpeg.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/dipijpeg.h
+END
+djdecbas.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdecbas.cc
+END
+djdecbas.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdecbas.h
+END
+djcodece.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/djcodece.h
+END
+djdec2k.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osirix/!svn/ver/7864/osirix/Binaries/dcmtk-source/dcmjpeg/djdec2k.h
+END
+djencabs.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7778/osirix/Binaries/dcmtk-source/dcmjpeg/djencabs.h
+END
+djenc2k.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/8290/osirix/Binaries/dcmtk-source/dcmjpeg/djenc2k.cc
+END
+djdeclol.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdeclol.h
+END
+djeijg8.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7778/osirix/Binaries/dcmtk-source/dcmjpeg/djeijg8.cc
+END
+djenclol.cc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djenclol.cc
+END
+djdijg12.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/djdijg12.cc
+END
+djeijg12.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/7778/osirix/Binaries/dcmtk-source/dcmjpeg/djeijg12.cc
+END
+djcodece.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/9151/osirix/Binaries/dcmtk-source/dcmjpeg/djcodece.cc
+END
+djeijg12.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7778/osirix/Binaries/dcmtk-source/dcmjpeg/djeijg12.h
+END
+djrploss.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djrploss.h
+END
+ddpiimpl.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/ddpiimpl.cc
+END
+djdijg16.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/djdijg16.cc
+END
+djeijg16.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/7778/osirix/Binaries/dcmtk-source/dcmjpeg/djeijg16.cc
+END
+djdijp2k.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdijp2k.h
+END
+djdecode.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7806/osirix/Binaries/dcmtk-source/dcmjpeg/djdecode.h
+END
+djeijg16.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/7778/osirix/Binaries/dcmtk-source/dcmjpeg/djeijg16.h
+END
+djencpro.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djencpro.h
+END
+djencext.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djencext.h
+END
+djencsps.cc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djencsps.cc
+END
+djencbas.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djencbas.h
+END
+djencsv1.cc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djencsv1.cc
+END
+djutils.cc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djutils.cc
+END
+djdeclol.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/7767/osirix/Binaries/dcmtk-source/dcmjpeg/djdeclol.cc
+END
+djdijg8.cc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/5033/osirix/Binaries/dcmtk-source/dcmjpeg/djdijg8.cc
+END
+djcparam.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/djcparam.h
+END
+djdijg8.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/djdijg8.h
+END
+djeijg2k.cc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/9049/osirix/Binaries/dcmtk-source/dcmjpeg/djeijg2k.cc
+END

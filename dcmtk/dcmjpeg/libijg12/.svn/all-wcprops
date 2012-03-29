@@ -1,0 +1,467 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/6031/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12
+END
+jdatadst.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdatadst.c
+END
+jmemsys12.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jmemsys12.h
+END
+jlossls12.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jlossls12.h
+END
+jdtrans.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/osirix/!svn/ver/4777/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdtrans.c
+END
+jdscale.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdscale.c
+END
+jchuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jchuff.c
+END
+jerror12.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jerror12.h
+END
+jcparam.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcparam.c
+END
+jclhuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jclhuff.c
+END
+jquant1.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jquant1.c
+END
+jaricom.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jaricom.c
+END
+jcphuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcphuff.c
+END
+jdlossy.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdlossy.c
+END
+jccolor.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jccolor.c
+END
+jcmarker.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcmarker.c
+END
+jcsample.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcsample.c
+END
+jmemmgr.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jmemmgr.c
+END
+jdsample.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdsample.c
+END
+jdmarker.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdmarker.c
+END
+jfdctflt.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jfdctflt.c
+END
+jidctflt.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jidctflt.c
+END
+jcscale.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcscale.c
+END
+jctrans.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jctrans.c
+END
+jmorecfg12.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jmorecfg12.h
+END
+jcpred.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcpred.c
+END
+jversion12.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jversion12.h
+END
+jpegint12.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jpegint12.h
+END
+jcprepct.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcprepct.c
+END
+jutils.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jutils.c
+END
+jdinput.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdinput.c
+END
+jpeglib12.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jpeglib12.h
+END
+jdarith.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdarith.c
+END
+jclossy.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jclossy.c
+END
+jcodec.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcodec.c
+END
+jconfig12.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jconfig12.h
+END
+jcmainct.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcmainct.c
+END
+jdshuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdshuff.c
+END
+jdmainct.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdmainct.c
+END
+jdpostct.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdpostct.c
+END
+jcapimin.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcapimin.c
+END
+jdapimin.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdapimin.c
+END
+jlossy12.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jlossy12.h
+END
+jcdctmgr.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcdctmgr.c
+END
+jddctmgr.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jddctmgr.c
+END
+jerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/osirix/!svn/ver/6031/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jerror.c
+END
+jdhuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/osirix/!svn/ver/6030/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdhuff.c
+END
+jfdctfst.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jfdctfst.c
+END
+jcmaster.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcmaster.c
+END
+jdmaster.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdmaster.c
+END
+jidctfst.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jidctfst.c
+END
+jmemnobs.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jmemnobs.c
+END
+jchuff12.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jchuff12.h
+END
+jdhuff12.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdhuff12.h
+END
+jcinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcinit.c
+END
+jcarith.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcarith.c
+END
+jquant2.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jquant2.c
+END
+jcshuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcshuff.c
+END
+jdatasrc.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/osirix/!svn/ver/844/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdatasrc.c
+END
+jdct12.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdct12.h
+END
+jclossls.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jclossls.c
+END
+jdlossls.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdlossls.c
+END
+jcapistd.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcapistd.c
+END
+jdapistd.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdapistd.c
+END
+jfdctint.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jfdctint.c
+END
+jinclude12.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/osirix/!svn/ver/3649/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jinclude12.h
+END
+jidctint.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jidctint.c
+END
+jdpred.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdpred.c
+END
+jcdiffct.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcdiffct.c
+END
+jdmerge.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdmerge.c
+END
+jddiffct.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jddiffct.c
+END
+jccoefct.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jccoefct.c
+END
+jdcoefct.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdcoefct.c
+END
+jdlhuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdlhuff.c
+END
+jcomapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jcomapi.c
+END
+jdphuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdphuff.c
+END
+jidctred.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jidctred.c
+END
+jdcolor.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/osirix/!svn/ver/2/osirix/Binaries/dcmtk-source/dcmjpeg/libijg12/jdcolor.c
+END

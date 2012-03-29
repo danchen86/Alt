@@ -1,0 +1,25 @@
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m: In function '-[DCMPix isDICOMFile:]':
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:18: error: 'imageObj' undeclared (first use in this function)
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:18: error: (Each undeclared identifier is reported only once
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:18: error: for each function it appears in.)
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:24: error: 'DicomFile' undeclared (first use in this function)
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m: In function '-[DCMPix CheckLoadIn]':
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:71: warning: 'DCMPix' may not respond to '-loadDICOMDCMFramework'
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:71: warning: (Messages without a matching method signature
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:71: warning: will be assumed to return 'id' and accept
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:71: warning: '...' as arguments.)
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:71: warning: assignment makes integer from pointer without a cast
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:76: error: 'imageObj' undeclared (first use in this function)
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:77: warning: 'DCMPix' may not respond to '-clearCachedPapyGroups'
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:88: warning: 'DCMPix' may not respond to '-checkSUV'
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:100: error: 'fExternalOwnedImage' undeclared (first use in this function)
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:109: error: 'notAbleToLoadImage' undeclared (first use in this function)
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:33: warning: unused variable 'USECUSTOMTIFF'
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m: In function '-[DCMPix CheckLoad]':
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:134: error: 'checking' undeclared (first use in this function)
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m: At top level:
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:151: error: redefinition of '-[DCMPix isDICOMFile:]'
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:15: error: previous definition of '-[DCMPix isDICOMFile:]' was here
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m: In function '-[DCMPix isDICOMFile:]':
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:154: error: 'imageObj' undeclared (first use in this function)
+/Users/danchen/Documents/xcode/Alt/Classes/DCMPix.m:160: error: 'DicomFile' undeclared (first use in this function)
