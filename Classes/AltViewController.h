@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NavigationController.h"
 #import "ImageTableController.h"
+#import "DCMPix.h"
 
 @interface AltViewController : UIViewController <UIGestureRecognizerDelegate, UIPopoverControllerDelegate, 
 												NavigationControllerDelegate, ImageTableDelegate>{

@@ -1558,6 +1558,80 @@ BOOL gDisplayDICOMOverlays = YES;
 	annotationsDictionary = [[NSMutableDictionary dictionary] retain];
 }
 
+- (UIImage*) generateThumbnailImageWithWW: (float)newWW WL: (float)newWL
+{
+    int destWidth, destHeight;
+	UIImage *image = nil;
+	float ratio;
+	
+    [self CheckLoad];
+	
+	if( (float) width / PREVIEWSIZE > (float) height / PREVIEWSIZE) ratio = (float) width / PREVIEWSIZE;
+	else ratio = (float) height / PREVIEWSIZE;
+	
+	destWidth = (float) width / ratio;
+	destHeight = (float) height / ratio;
+    
+	NSBitmapImageRep *bitmapRep = nil;
+	
+	if( isRGB)
+	{
+		bitmapRep = [[[NSBitmapImageRep alloc] 
+					  initWithBitmapDataPlanes: nil
+					  pixelsWide:destWidth
+					  pixelsHigh:destHeight
+					  bitsPerSample:8
+					  samplesPerPixel:3
+					  hasAlpha:NO
+					  isPlanar:NO
+					  colorSpaceName:NSCalibratedRGBColorSpace
+					  bytesPerRow:destWidth*4
+					  bitsPerPixel:24
+					  ] autorelease];
+	}
+	else
+	{
+		bitmapRep = [[[NSBitmapImageRep alloc] 
+					  initWithBitmapDataPlanes: nil
+					  pixelsWide:destWidth
+					  pixelsHigh:destHeight
+					  bitsPerSample:8
+					  samplesPerPixel:1  // 1-3 // RGB
+					  hasAlpha:NO
+					  isPlanar:NO
+					  colorSpaceName:NSCalibratedWhiteColorSpace
+					  bytesPerRow:destWidth
+					  bitsPerPixel:8 // 8 - 24 -32
+					  ] autorelease];
+	}
+	
+	if( bitmapRep)
+	{
+		if( newWW == 0 && newWL == 0)
+		{
+			if( ww == 0 && wl == 0)
+			{
+				[self computePixMinPixMax];
+				ww = fullww;
+				wl = fullwl;
+			}
+			newWW = ww;
+			newWL = wl;
+		}
+		
+		CreateIconFrom16( fImage, [bitmapRep bitmapData], height, width, destWidth, newWL, newWW, isRGB);
+		
+
+		
+		image = [[[NSImage alloc] initWithSize:NSMakeSize(destWidth, destHeight)] autorelease];
+		[image addRepresentation:bitmapRep];
+	}
+	else NSLog(@"Memory error... not enough RAM");
+	
+    return image;
+}
+
+
 
 
 

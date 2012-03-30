@@ -167,7 +167,8 @@
 	if([_type compare:@"Abdomen"] == NSOrderedSame) {
 		
 		if ([image compare:@"Front View"] == NSOrderedSame) {
-			[self displayImage:[UIImage imageNamed:@"abdomen.jpg"]];
+			//[self displayImage:[UIImage imageNamed:@"abdomen.jpg"]];
+			//DCMPix *dcmPix = [[DCMPix alloc] initWithContentsOfFile:@"abdomen_dcm.dcm"];
 			//[imageViewer setImage:[UIImage imageNamed:@"abdomen.jpg"]];
 			
 			[self addGestureRecognizersToImage];
