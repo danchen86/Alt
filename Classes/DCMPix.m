@@ -13,7 +13,8 @@
 
 
 @implementation DCMPix
-//static NSMutableDictionary *cachedDCMFrameworkFiles = nil;
+static NSMutableDictionary *cachedPapyGroups = nil;
+static NSMutableDictionary *cachedDCMFrameworkFiles = nil;
 static NSConditionLock *purgeCacheLock = nil;
 BOOL gUseShutter = NO;
 BOOL gDisplayDICOMOverlays = YES;
@@ -1481,6 +1482,82 @@ BOOL gDisplayDICOMOverlays = YES;
 	
 	[checking unlock];
 }
+
+- (id)initWithContentsOfFile: (NSString *)file
+{
+	return  [self initWithPath:file :0 :1 :nil :0 :0 isBonjour:NO imageObj: nil];
+}
+
+- (id) initWithPath:(NSString*) s :(long) pos :(long) tot :(float*) ptr :(long) f :(long) ss isBonjour:(BOOL) hello imageObj: (NSManagedObject*) iO
+{	
+	// doesn't load pix data, only initializes instance variables
+	if( hello == NO && s != nil)
+		if( [[NSFileManager defaultManager] fileExistsAtPath:s] == NO) return nil;
+	
+    if( self = [super init])
+    {
+		//-------------------------received parameters
+		srcFile = [s retain];
+		imageObj = [iO retain];
+		
+//		savedHeightInDB = [[imageObj valueForKey:@"height"] intValue];
+//		savedWidthInDB = [[imageObj valueForKey:@"width"] intValue];
+		
+		imID = pos;
+		imTot = tot;
+		fExternalOwnedImage = ptr;
+		frameNo = f;
+		serieNo = ss;
+		isBonjour = hello;
+		
+		[self initParameters];
+    }
+    return self;
+}
+
+- (void) initParameters
+{
+	//will not be currently used, may be useful for later development
+//	[DCMPix checkUserDefaults: NO];
+	
+	if( cachedPapyGroups == nil)
+		cachedPapyGroups = [[NSMutableDictionary dictionary] retain];
+	
+	if( cachedDCMFrameworkFiles == nil)
+		cachedDCMFrameworkFiles = [[NSMutableDictionary dictionary] retain];
+	
+	needToCompute8bitRepresentation = YES;
+	
+	//---------------------------------various
+	pixelRatio = 1.0;
+	checking = [[NSRecursiveLock alloc] init];
+	stack = 2;
+	decayFactor = 1.0;
+	slope = 1.0;
+	//----------------------------------angio
+	subtractedfPercent = 1.0;
+	subtractedfZ = 0.8;
+	subtractedfZero = 0.8;
+	subtractedfGamma = 2.0;
+	
+	factorPET2SUV = 1.0;
+	maskID = 1;
+	
+	//----------------------------------orientation		
+	orientation[ 0] = 1;
+	orientation[ 1] = 0;
+	orientation[ 2] = 0;
+	orientation[ 3] = 0;
+	orientation[ 4] = 1;
+	orientation[ 5] = 0;
+	// Compute normal vector
+	orientation[6] = orientation[1]*orientation[5] - orientation[2]*orientation[4];
+	orientation[7] = orientation[2]*orientation[3] - orientation[0]*orientation[5];
+	orientation[8] = orientation[0]*orientation[4] - orientation[1]*orientation[3];
+	
+	annotationsDictionary = [[NSMutableDictionary dictionary] retain];
+}
+
 
 
 

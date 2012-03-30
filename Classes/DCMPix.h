@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Accelerate/Accelerate.h>
+#import <CoreData/CoreData.h>
 
 
 @interface DCMPix : NSObject {
@@ -19,7 +20,7 @@
 	
 	//BUFFERS	
 	NSArray				*pixArray;
-	NSManagedObjectModel		*imageObj;	/**< Core data object for image */
+	NSManagedObject		*imageObj;	/**< Core data object for image */
 	float                       *fImage; /**< float buffer of image Data */
     float                       *fExternalOwnedImage;  /**< float buffer of image Data - provided by another source, not owned by this object, not release by this object */
 
@@ -67,7 +68,7 @@
 	NSString			*repetitiontime, *echotime, *flipAngle, *laterality;
 	NSString			*viewPosition, *patientPosition, *acquisitionDate, *SOPClassUID, *frameofReferenceUID;
 	NSString			*units, *decayCorrection;
-	float				decayFactor;
+	float				decayFactor, factorPET2SUV;
 	
 	NSNumber			*positionerPrimaryAngle;
 	NSNumber			*positionerSecondaryAngle;
@@ -99,6 +100,21 @@
 	unsigned char		*oData;
 	
 	float				ww, wl;
+	
+	//stack
+	short				stack;
+	
+	//DSA-subtraction	
+	float				subtractedfPercent;
+	float				subtractedfZ;
+	float				subtractedfZero;
+	float				subtractedfGamma;
+
+	long				maskID;
+	
+	/** custom annotations */
+	NSMutableDictionary *annotationsDictionary;
+
 }
 
 
