@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/jpg
+END
+jpeglib.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/jpg/jpeglib.h
+END
+jpg_jpeglib.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/jpg/jpg_jpeglib.h
+END
+jpg_val.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/jpg/jpg_val.c
+END
+jpg_enc.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/jpg/jpg_enc.c
+END
+jpg_cod.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/jpg/jpg_cod.h
+END
+jpg_enc.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/jpg/jpg_enc.h
+END
+jpg_dec.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/jpg/jpg_dec.c
+END
+jpg_dummy.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/jpg/jpg_dummy.c
+END

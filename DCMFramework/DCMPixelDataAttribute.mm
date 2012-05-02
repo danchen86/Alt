@@ -27,7 +27,7 @@
 //#import "jasper.h"
 
 
-static int Use_kdu_IfAvailable = 0;
+static int Use_kdu_IfAvailable = 1;
 
 // KDU support
 #include "kdu_OsiriXSupport.h"
@@ -1019,37 +1019,37 @@ static inline int int_ceildivpow2(int a, int b) {
 	}
 	
 	//jpeg2000
-//	if ([[DCMTransferSyntax JPEG2000LosslessTransferSyntax] isEqualToTransferSyntax:ts] || [[DCMTransferSyntax JPEG2000LossyTransferSyntax] isEqualToTransferSyntax:ts])
-//	{
-////		if( JasperInitialized == NO)
-////		{
-////			JasperInitialized = YES;
-////			jas_init();
-////		}
-//			
-//		NSMutableArray *array = [NSMutableArray array];
-//		for ( NSMutableData *data in _values )
+	if ([[DCMTransferSyntax JPEG2000LosslessTransferSyntax] isEqualToTransferSyntax:ts] || [[DCMTransferSyntax JPEG2000LossyTransferSyntax] isEqualToTransferSyntax:ts])
+	{
+//		if( JasperInitialized == NO)
 //		{
-//			NSMutableData *newData = [self encodeJPEG2000:data quality:quality];
-//			[array addObject:newData];
+//			JasperInitialized = YES;
+//			jas_init();
 //		}
-//		for ( int i = 0; i< [array count]; i++ )
-//		{
-//			[_values replaceObjectAtIndex:i withObject:[array objectAtIndex:i]];
-//		}
-//		
-//		if 	( [[DCMTransferSyntax JPEG2000LossyTransferSyntax] isEqualToTransferSyntax:ts] )
-//			[self setLossyImageCompressionRatio:[_values objectAtIndex:0] quality: quality];
-//			
-//		//[_dcmObject removePlanarAndRescaleAttributes];
-//		
-//		[self createOffsetTable];
-//		self.transferSyntax = ts;
-//		if (DCMDEBUG)
-//			NSLog(@"Converted to Syntax %@", transferSyntax.description );
-//		status = YES;
-//		goto finishedConversion;
-//	}
+			
+		NSMutableArray *array = [NSMutableArray array];
+		for ( NSMutableData *data in _values )
+		{
+			NSMutableData *newData = [self encodeJPEG2000:data quality:quality];
+			[array addObject:newData];
+		}
+		for ( int i = 0; i< [array count]; i++ )
+		{
+			[_values replaceObjectAtIndex:i withObject:[array objectAtIndex:i]];
+		}
+		
+		if 	( [[DCMTransferSyntax JPEG2000LossyTransferSyntax] isEqualToTransferSyntax:ts] )
+			[self setLossyImageCompressionRatio:[_values objectAtIndex:0] quality: quality];
+			
+		//[_dcmObject removePlanarAndRescaleAttributes];
+		
+		[self createOffsetTable];
+		self.transferSyntax = ts;
+		if (DCMDEBUG)
+			NSLog(@"Converted to Syntax %@", transferSyntax.description );
+		status = YES;
+		goto finishedConversion;
+	}
 	
 	finishedConversion:
 	status = status;
@@ -1249,30 +1249,32 @@ static inline int int_ceildivpow2(int a, int b) {
 	return [self convertJPEG8LosslessToHost:jpegData];
 }
 
-//- (NSData *)convertJPEG2000ToHost:(NSData *)jpegData
-//{
-//	NSMutableData *pixelData = nil;
-//	
-//	BOOL succeed = NO;
-//	
-//	if( Use_kdu_IfAvailable && kdu_available())
-//	{
-//		long decompressedLength = 0;
-//		
-//		int processors = 0;
-//		
+- (NSData *)convertJPEG2000ToHost:(NSData *)jpegData
+{
+	NSMutableData *pixelData = nil;
+	
+	BOOL succeed = NO;
+	
+	if( Use_kdu_IfAvailable && kdu_available())
+	{
+		long decompressedLength = 0;
+		
+		int processors = 1;
+		//given iPad, making processors = 1. 
+		
 //		if( [jpegData length] > 512*1024)
+//
 //			processors = MPProcessors()/2;
-//		
-//		int colorModel;
-//		
-//		void *p = kdu_decompressJPEG2K( (void*) [jpegData bytes], [jpegData length], &decompressedLength, &colorModel, processors);
-//		if( p)
-//		{
-//			pixelData = [NSMutableData dataWithBytesNoCopy: p length:decompressedLength freeWhenDone: YES];
-//			succeed = YES;
-//		}
-//	}
+		
+		int colorModel;
+		
+		void *p = kdu_decompressJPEG2K( (void*) [jpegData bytes], [jpegData length], &decompressedLength, &colorModel, processors);
+		if( p)
+		{
+			pixelData = [NSMutableData dataWithBytesNoCopy: p length:decompressedLength freeWhenDone: YES];
+			succeed = YES;
+		}
+	}
 	
 //	if( succeed == NO)
 //	{
@@ -1408,8 +1410,8 @@ static inline int int_ceildivpow2(int a, int b) {
 //		pixelData = [NSMutableData dataWithBytesNoCopy:newPixelData length:decompressedLength freeWhenDone: YES];
 //	}
 	
-//	return pixelData;
-//}
+	return pixelData;
+}
 
 - (NSData *)convertRLEToHost:(NSData *)rleData{
 	/*
@@ -1531,55 +1533,56 @@ static inline int int_ceildivpow2(int a, int b) {
 	return decompressedData;
 }
 
-//- (NSMutableData *)encodeJPEG2000:(NSMutableData *)data quality:(int)quality
-//{
-//	if( Use_kdu_IfAvailable && kdu_available())
-//	{
-//		int precision = [[_dcmObject attributeValueWithName:@"BitsStored"] intValue];
-//		int rate = 0;
-//		
-//		switch( quality)
-//		{
-//			case DCMLosslessQuality:
-//				rate = 0;
-//			break;
-//				
-//			case DCMHighQuality:
-//				rate = 5;
-//			break;
-//				
-//			case DCMMediumQuality:
-//				if( _columns <= 600 || _rows <= 600) rate = 6;
-//				else rate = 8;
-//			break;
-//				
-//			case DCMLowQuality:
-//				rate = 16;
-//			break;
-//				
-//			default:
-//				NSLog( @"****** warning unknown compression rate -> lossless : %d", quality);
-//				rate = 0;
-//			break;
-//		}
-//		
-//		long compressedLength = 0;
-//		
-//		int processors = 0;
-//		
+- (NSMutableData *)encodeJPEG2000:(NSMutableData *)data quality:(int)quality
+{
+	if( Use_kdu_IfAvailable && kdu_available())
+	{
+		int precision = [[_dcmObject attributeValueWithName:@"BitsStored"] intValue];
+		int rate = 0;
+		
+		switch( quality)
+		{
+			case DCMLosslessQuality:
+				rate = 0;
+			break;
+				
+			case DCMHighQuality:
+				rate = 5;
+			break;
+				
+			case DCMMediumQuality:
+				if( _columns <= 600 || _rows <= 600) rate = 6;
+				else rate = 8;
+			break;
+				
+			case DCMLowQuality:
+				rate = 16;
+			break;
+				
+			default:
+				NSLog( @"****** warning unknown compression rate -> lossless : %d", quality);
+				rate = 0;
+			break;
+		}
+		
+		long compressedLength = 0;
+		
+		int processors = 1;
+		//1 processor for iPad 1st gen
+		
 //		if( _rows*_columns > 256*1024) // 512 * 512
 //			processors = MPProcessors()/2;
-//		
-//		void *outBuffer = kdu_compressJPEG2K( (void*) [data bytes], _samplesPerPixel, _rows, _columns, precision, false, rate, &compressedLength, processors);
-//		
-//		NSMutableData *jpeg2000Data = [NSMutableData dataWithBytesNoCopy: outBuffer length: compressedLength freeWhenDone: YES];
-//		
-//		char zero = 0;
-//		if ([jpeg2000Data length] % 2) 
-//			[jpeg2000Data appendBytes:&zero length:1];
-//		
-//		return jpeg2000Data;
-//	}
+		
+		void *outBuffer = kdu_compressJPEG2K( (void*) [data bytes], _samplesPerPixel, _rows, _columns, precision, false, rate, &compressedLength, processors);
+		
+		NSMutableData *jpeg2000Data = [NSMutableData dataWithBytesNoCopy: outBuffer length: compressedLength freeWhenDone: YES];
+		
+		char zero = 0;
+		if ([jpeg2000Data length] % 2) 
+			[jpeg2000Data appendBytes:&zero length:1];
+		
+		return jpeg2000Data;
+	}
 ////	else
 ////	{
 ////		opj_cparameters_t parameters;
@@ -1979,9 +1982,9 @@ static inline int int_ceildivpow2(int a, int b) {
 ////		
 ////		return jpeg2000Data;
 ////	}
-//	
-//	return nil;
-//}
+	
+	return nil;
+}
 
 - (void)decodeData
 {
@@ -3776,12 +3779,12 @@ NS_ENDHANDLER
 			{
 				data = [self convertJPEG16ToHost:subData];		
 			}
-//			//JPEG 2000
-//			else if ([transferSyntax isEqualToTransferSyntax:[DCMTransferSyntax JPEG2000LosslessTransferSyntax]] || [transferSyntax isEqualToTransferSyntax:[DCMTransferSyntax JPEG2000LossyTransferSyntax]] )
-//			{
-//				colorspaceIsConverted = YES;
-//				data = [self convertJPEG2000ToHost:subData];
-//			}
+			//JPEG 2000
+			else if ([transferSyntax isEqualToTransferSyntax:[DCMTransferSyntax JPEG2000LosslessTransferSyntax]] || [transferSyntax isEqualToTransferSyntax:[DCMTransferSyntax JPEG2000LossyTransferSyntax]] )
+			{
+				colorspaceIsConverted = YES;
+				data = [self convertJPEG2000ToHost:subData];
+			}
 			else if ([transferSyntax isEqualToTransferSyntax:[DCMTransferSyntax RLETransferSyntax]])
 			{
 				data = [self convertRLEToHost:subData];

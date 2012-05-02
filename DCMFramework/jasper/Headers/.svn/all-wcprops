@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers
+END
+jas_icc.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_icc.h
+END
+jas_cm.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_cm.h
+END
+jas_getopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_getopt.h
+END
+jas_init.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_init.h
+END
+jas_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_types.h
+END
+jas_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_config.h
+END
+jas_string.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_string.h
+END
+jas_malloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_malloc.h
+END
+jas_tvp.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_tvp.h
+END
+jas_image.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_image.h
+END
+jas_version.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_version.h
+END
+jas_fix.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_fix.h
+END
+jas_debug.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_debug.h
+END
+jas_config2.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_config2.h
+END
+jasper.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jasper.h
+END
+jas_seq.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_seq.h
+END
+jas_math.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_math.h
+END
+jas_stream.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/Headers/jas_stream.h
+END

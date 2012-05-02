@@ -168,13 +168,18 @@
 		
 		if ([image compare:@"Front View"] == NSOrderedSame) {
 			//[self displayImage:[UIImage imageNamed:@"abdomen.jpg"]];
-			//DCMPix *dcmPix = [[DCMPix alloc] initWithContentsOfFile:@"abdomen_dcm.dcm"];
+			DCMPix *dcmPix = [[DCMPix alloc] initWithContentsOfFile:@"/Users/danchen/Documents/xcode/Alt/images/abdomen_dcm.dcm"];
+			NSData *image = [dcmPix getNSData];
 			//[imageViewer setImage:[UIImage imageNamed:@"abdomen.jpg"]];
+			[self displayImage:[UIImage imageWithData:image]];
 			
 			[self addGestureRecognizersToImage];
 			
 		} else if ([image compare:@"Slice View"] == NSOrderedSame) {
-			[self displayImage:[UIImage imageNamed:@"abdomen_slice.jpg"]];
+			DCMPix *dcmPix = [[DCMPix alloc] initWithContentsOfFile:@"/Users/danchen/Documents/xcode/Alt/images/image1_dcm.dcm"];
+			NSData *image = [dcmPix getNSData];
+			[self displayImage:[UIImage imageWithData:image]];
+			//[self displayImage:[UIImage imageNamed:@"abdomen_slice.jpg"]];
 			[self addGestureRecognizersToImage];
 		}
 	} else {

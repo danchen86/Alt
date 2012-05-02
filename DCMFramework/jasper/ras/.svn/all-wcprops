@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/ras
+END
+ras_cod.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/ras/ras_cod.h
+END
+ras_enc.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/ras/ras_enc.h
+END
+ras_dec.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/ras/ras_dec.c
+END
+ras_cod.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/ras/ras_cod.c
+END
+ras_enc.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/ras/ras_enc.c
+END

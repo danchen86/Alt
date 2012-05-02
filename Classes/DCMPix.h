@@ -134,7 +134,7 @@
 @property(retain) NSString *frameofReferenceUID;
 
 - (id) initWithContentsOfFile: (NSString *)file; 
-/** create an NSImage from the current pix using the current ww/wl. Full size*/
-- (UIImage*) image;
+- (NSData*) getNSData;
+
 
 @end

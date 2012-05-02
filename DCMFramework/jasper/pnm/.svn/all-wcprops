@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/pnm
+END
+pnm_cod.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/pnm/pnm_cod.c
+END
+pnm_enc.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/pnm/pnm_enc.c
+END
+pnm_cod.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/pnm/pnm_cod.h
+END
+pnm_enc.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/pnm/pnm_enc.h
+END
+pnm_dec.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/pnm/pnm_dec.c
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base
+END
+jas_getopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_getopt.c
+END
+jas_image.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_image.c
+END
+jas_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_init.c
+END
+jas_version.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_version.c
+END
+jas_debug.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_debug.c
+END
+jas_string.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_string.c
+END
+jas_malloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_malloc.c
+END
+jas_iccdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_iccdata.c
+END
+jas_seq.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_seq.c
+END
+jas_tvp.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_tvp.c
+END
+jas_stream.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_stream.c
+END
+jas_icc.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_icc.c
+END
+jas_cm.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osirix/!svn/ver/2/osirix/DCM%20Framework/jasper/base/jas_cm.c
+END

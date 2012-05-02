@@ -599,23 +599,23 @@ BOOL gDisplayDICOMOverlays = YES;
 //		if( fExternalOwnedImage)
 //			fImage = fExternalOwnedImage;
 //		else
-			fImage = malloc( 128 * 128 * 4);
-		
-		height = 128;
-		width = 128;
-		isRGB = NO;
-		
-		for( int i = 0; i < 128*128; i++)
-			fImage[ i ] = i%2;
-		
-#ifdef OSIRIX_VIEWER
-        [self loadCustomImageAnnotationsPapyLink:-1 DCMLink:dcmObject];
-#endif
-		
-		[purgeCacheLock lock];
-		[purgeCacheLock unlockWithCondition: [purgeCacheLock condition]-1];
-		[pool release];
-		return YES;
+//			fImage = malloc( 128 * 128 * 4);
+//		
+//		height = 128;
+//		width = 128;
+//		isRGB = NO;
+//		
+//		for( int i = 0; i < 128*128; i++)
+//			fImage[ i ] = i%2;
+//		
+//#ifdef OSIRIX_VIEWER
+//        [self loadCustomImageAnnotationsPapyLink:-1 DCMLink:dcmObject];
+//#endif
+//		
+//		[purgeCacheLock lock];
+//		[purgeCacheLock unlockWithCondition: [purgeCacheLock condition]-1];
+//		[pool release];
+//		return YES;
 //	}
 	
 	@try
@@ -1359,7 +1359,7 @@ BOOL gDisplayDICOMOverlays = YES;
 	else
 	{
 		//readable = [DicomFile isDICOMFile: file];
-		readable = NO;
+		readable = YES;
 
     }
 	
@@ -1558,80 +1558,86 @@ BOOL gDisplayDICOMOverlays = YES;
 	annotationsDictionary = [[NSMutableDictionary dictionary] retain];
 }
 
-- (UIImage*) generateThumbnailImageWithWW: (float)newWW WL: (float)newWL
-{
-    int destWidth, destHeight;
-	UIImage *image = nil;
-	float ratio;
-	
-    [self CheckLoad];
-	
-	if( (float) width / PREVIEWSIZE > (float) height / PREVIEWSIZE) ratio = (float) width / PREVIEWSIZE;
-	else ratio = (float) height / PREVIEWSIZE;
-	
-	destWidth = (float) width / ratio;
-	destHeight = (float) height / ratio;
-    
-	NSBitmapImageRep *bitmapRep = nil;
-	
-	if( isRGB)
-	{
-		bitmapRep = [[[NSBitmapImageRep alloc] 
-					  initWithBitmapDataPlanes: nil
-					  pixelsWide:destWidth
-					  pixelsHigh:destHeight
-					  bitsPerSample:8
-					  samplesPerPixel:3
-					  hasAlpha:NO
-					  isPlanar:NO
-					  colorSpaceName:NSCalibratedRGBColorSpace
-					  bytesPerRow:destWidth*4
-					  bitsPerPixel:24
-					  ] autorelease];
-	}
-	else
-	{
-		bitmapRep = [[[NSBitmapImageRep alloc] 
-					  initWithBitmapDataPlanes: nil
-					  pixelsWide:destWidth
-					  pixelsHigh:destHeight
-					  bitsPerSample:8
-					  samplesPerPixel:1  // 1-3 // RGB
-					  hasAlpha:NO
-					  isPlanar:NO
-					  colorSpaceName:NSCalibratedWhiteColorSpace
-					  bytesPerRow:destWidth
-					  bitsPerPixel:8 // 8 - 24 -32
-					  ] autorelease];
-	}
-	
-	if( bitmapRep)
-	{
-		if( newWW == 0 && newWL == 0)
-		{
-			if( ww == 0 && wl == 0)
-			{
-				[self computePixMinPixMax];
-				ww = fullww;
-				wl = fullwl;
-			}
-			newWW = ww;
-			newWL = wl;
-		}
-		
-		CreateIconFrom16( fImage, [bitmapRep bitmapData], height, width, destWidth, newWL, newWW, isRGB);
-		
+//- (UIImage*) generateThumbnailImageWithWW: (float)newWW WL: (float)newWL
+//{
+//    int destWidth, destHeight;
+//	UIImage *image = nil;
+//	float ratio;
+//	
+//    [self CheckLoad];
+//	
+//	if( (float) width / PREVIEWSIZE > (float) height / PREVIEWSIZE) ratio = (float) width / PREVIEWSIZE;
+//	else ratio = (float) height / PREVIEWSIZE;
+//	
+//	destWidth = (float) width / ratio;
+//	destHeight = (float) height / ratio;
+//    
+//	NSBitmapImageRep *bitmapRep = nil;
+//	
+//	if( isRGB)
+//	{
+//		bitmapRep = [[[NSBitmapImageRep alloc] 
+//					  initWithBitmapDataPlanes: nil
+//					  pixelsWide:destWidth
+//					  pixelsHigh:destHeight
+//					  bitsPerSample:8
+//					  samplesPerPixel:3
+//					  hasAlpha:NO
+//					  isPlanar:NO
+//					  colorSpaceName:NSCalibratedRGBColorSpace
+//					  bytesPerRow:destWidth*4
+//					  bitsPerPixel:24
+//					  ] autorelease];
+//	}
+//	else
+//	{
+//		bitmapRep = [[[NSBitmapImageRep alloc] 
+//					  initWithBitmapDataPlanes: nil
+//					  pixelsWide:destWidth
+//					  pixelsHigh:destHeight
+//					  bitsPerSample:8
+//					  samplesPerPixel:1  // 1-3 // RGB
+//					  hasAlpha:NO
+//					  isPlanar:NO
+//					  colorSpaceName:NSCalibratedWhiteColorSpace
+//					  bytesPerRow:destWidth
+//					  bitsPerPixel:8 // 8 - 24 -32
+//					  ] autorelease];
+//	}
+//	
+//	if( bitmapRep)
+//	{
+//		if( newWW == 0 && newWL == 0)
+//		{
+//			if( ww == 0 && wl == 0)
+//			{
+//				[self computePixMinPixMax];
+//				ww = fullww;
+//				wl = fullwl;
+//			}
+//			newWW = ww;
+//			newWL = wl;
+//		}
+//		
+//		CreateIconFrom16( fImage, [bitmapRep bitmapData], height, width, destWidth, newWL, newWW, isRGB);
+//		
+//
+//		
+//		image = [[[NSImage alloc] initWithSize:NSMakeSize(destWidth, destHeight)] autorelease];
+//		[image addRepresentation:bitmapRep];
+//	}
+//	else NSLog(@"Memory error... not enough RAM");
+//	
+//    return image;
+//}
 
-		
-		image = [[[NSImage alloc] initWithSize:NSMakeSize(destWidth, destHeight)] autorelease];
-		[image addRepresentation:bitmapRep];
-	}
-	else NSLog(@"Memory error... not enough RAM");
+- (NSData*) getNSData {
+	[self CheckLoad];
 	
-    return image;
+	NSMutableData * data = [NSMutableData dataWithCapacity:0];
+	[data appendBytes:&fImage length:sizeof(float*)];
+	return data;
 }
-
-
 
 
 
